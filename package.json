@@ -1,5 +1,5 @@
 {
-  "homepage": "https://github.com/ramyakola213/veniacapstone/",
+  "homepage": "https://github.com/ramyakola213/veniacapstone",
   "name": "venia",
   "version": "0.1.0",
   "private": true,
@@ -29,6 +29,7 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
+    
   },
   "eslintConfig": {
     "extends": [
@@ -56,11 +57,11 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ramyakola213/veniashopping.git"
+    "url": "git+https://github.com/ramyakola213/veniacapstone.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ramyakola213/veniashopping/issues"
+    "url": "https://github.com/ramyakola213/veniacapstone/issues"
   }
 }
