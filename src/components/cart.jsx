@@ -1,13 +1,10 @@
 
 import React, { useState, useEffect } from "react";
-// import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 import trash from "../assets/trash-2.svg";
 import edit from "../assets/edit-2.svg";
 import heart from "../assets/heart.svg";
 import paypal from "../assets/paypal.png";
-
-
 import { NavLink } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { toHaveDescription } from "@testing-library/jest-dom/dist/matchers";
@@ -21,7 +18,7 @@ const Cart = (props) => {
         return (
             <>
 
-                <div className="aem-Grid aem-Grid--12"><h1>Your shopping Bag</h1><hr></hr></div>
+             <div className="aem-Grid aem-Grid--12"><h1>Your shopping Bag</h1><hr></hr></div>
 
                 {storeData && storeData.handleCart && storeData.handleCart.length > 0 ? storeData.handleCart.map((product) => {
                     return (
@@ -48,8 +45,6 @@ const Cart = (props) => {
                                         <li ><button className="quant">1</button>     </li>
                                         <li ><button className="plus">+</button>    </li>
                                     </ul>
-
-
                                 </div>
                                 <div className=" aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12" >
                                     <ul data-accordion className="categories">
@@ -61,25 +56,18 @@ const Cart = (props) => {
 
                                 </div>
                             </div>
-
-
-
                         </>
                     )
                 }) : 'No Items in Cart to Display'
                 }
 
                 {storeData && storeData.handleCart && storeData.handleCart.length > 0 ? 
-                <PricingSummary storeData={storeData.handleCart}>
-                    
-                    
-                     </PricingSummary>
+                <PricingSummary storeData={storeData.handleCart}></PricingSummary>
  
                          : ''
 
                 }
-                                 <div className="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--phone--12  button_wrap">
-                        
+                    <div className="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--phone--12  button_wrap">                        
                         <NavLink to="/Checkout"> <button type="submit"  className="primary_button" value="CONTINUE" >CHECKOUT</button></NavLink>
                       {/* <img src={paypal}></img> */}
                     </div>
@@ -95,7 +83,6 @@ const Cart = (props) => {
                 <div className="aem-Grid aem-Grid--12  ">
 
                     {<ItemsDetails />}
-
 
                 </div>
 

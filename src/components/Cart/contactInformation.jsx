@@ -158,7 +158,6 @@ class GuestContactInformation extends Component {
                     </Accordion>
                     <hr className="mr-10" />
                 </form>
-
             </div>
         )
     }

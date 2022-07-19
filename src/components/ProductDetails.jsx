@@ -1,17 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { addCart } from '../redux/action';
-import Skeleton from 'react-loading-skeleton';
 import { useParams } from 'react-router';
 import { NavLink } from "react-router-dom";
-import ReadMoreReact from 'read-more-react/dist/components/ReadMoreReact';
-import trash from "../assets/trash-2.svg";
 import edit from "../assets/edit-2.svg";
 import heart from "../assets/heart.svg";
-
 import gradone from "../assets/Swatch 01.png";
 import gradtwo from "../assets/Swatch 02.png";
-import gradthree from "../assets/Swatch 03.png";
 import gradfour from "../assets/Swatch 04.png";
 
 
@@ -49,18 +44,7 @@ const ProductDetails = () => {
         const Loading = () => {
                 return (
                         <>
-                                {/* <div className="col-md-6">
-               <Skeleton height={400}/>
-              </div>
-              <div className="col-md-6">
-               <Skeleton height={50} width={300}/>
-               <Skeleton height={75} />
-               <Skeleton height={25}  width={150}/>
-               <Skeleton height={50}  />
-               <Skeleton height={150}  />
-               <Skeleton height={50}  width={100}/>
-               <Skeleton height={50}  width={100} style={{marginLeft:6}}/>
-              </div> */}
+
                                 Loading...
                         </>
                 )
@@ -80,27 +64,18 @@ const ProductDetails = () => {
                                         <img src={product.image} alt={product.title} height="400px" width="250px" />
                                 </div>
                                 <div className="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12">
-                                        <h5 className="text-uppercase">
+                                          <h5 className="text-uppercase">
                                                 Products  / {product.category} /
-                                        </h5>
-                                        <h3 className="display-m-24- ">{product.title}</h3>
-                                        <h3 className="">
+                                          </h5>
+                                            <h3 className="display-m-24- ">{product.title}</h3>
+                                            <h3 className="">
                                                 $ {product.price}
-                                        </h3>
-                                        <p className="">Rating {product.rating && product.rating.rate}
-
-                                        </p>
-
-                                        {/* <ReadMoreReact text={product.description}
-                                                min={11}
-                                                ideal={12}
-                                                max={13}
-
-                                                readMoreText="click here to read more" /> */}
+                                            </h3>
+                                        <p className="">Rating {product.rating && product.rating.rate} </p>
 
                                         <p className="lead"> {product.description}</p>
                                         <hr></hr>
-                                        <p className='regular-heading-s-14-'>Colors</p>
+                                            <p className='regular-heading-s-14-'>Colors</p>
                                         <ul data-accordion className="categories colors">
                                                 <li ><button className="pink"><img src={gradtwo} alt="pngimg" className='grad-img' /></button>   </li>
 
@@ -108,7 +83,7 @@ const ProductDetails = () => {
                                                 <li ><button className="grr" type="checkbox"> <img src={gradone} alt="pngimg" className='grad-img' /></button></li>
                                                 <li ><button className="pink"><img src={gradtwo} alt="pngimg" className='grad-img' /></button>   </li>
                                         </ul>
-                                        <p className='regular-heading-s-14-'>Size</p>
+                                             <p className='regular-heading-s-14-'>Size</p>
                                         <ul data-accordion className="categories size">
                                                 <li ><button className="">XS</button>   </li>
                                                 <li ><button className="">S</button>     </li>
@@ -117,7 +92,7 @@ const ProductDetails = () => {
                                                 <li ><button className="">XL</button>     </li>
 
                                         </ul>
-                                        <p className='regular-heading-s-14-'>Quantity</p>
+                                           <p className='regular-heading-s-14-'>Quantity</p>
                                         <ul data-accordion className="categories size">
                                                 <li ><button className="plus"  >-</button>   </li>
                                                 <li ><button className="quant">1</button>     </li>
@@ -128,7 +103,8 @@ const ProductDetails = () => {
                                         <NavLink to="/Cart">
                                                 <button className="add-to-cart" onClick={() => addProduct(product)}>
                                                         Add to Cart
-                                                </button></NavLink>
+                                                </button>
+                                        </NavLink>
 
                                 </div>
                                 <div className="aem-Grid aem-Grid--12 container contain">
@@ -160,9 +136,6 @@ const ProductDetails = () => {
 
                                         </div>
                                 </div>
-
-
-
 
                         </>
                 )

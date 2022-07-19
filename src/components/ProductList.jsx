@@ -1,10 +1,7 @@
 
 import React, { useState, useEffect} from "react";
-import Skeleton from "react-loading-skeleton";
-// import ReactPaginate from 'react-paginate';
 import heart from '../assets/heart.svg';
 import "react-loading-skeleton/dist/skeleton.css";
-import Breadcrum from "./Breadcrum";
 import {NavLink} from "react-router-dom";
 import ProductDetails from "./ProductDetails";
 
@@ -43,27 +40,7 @@ const ProductList = ()=>{
         const Loading = () => {
                 return (
                         <>
-                        {/* <div className="aem-GridColumn aem-GridColumn--default--3 ">
-                                <Skeleton  height={800} />
-                        </div>
-                        <div className="aem-GridColumn aem-GridColumn--default--3">
-                        <Skeleton className="skeleton-card" />
-                        </div>
-                        <div className="aem-GridColumn aem-GridColumn--default--3">
-                        <Skeleton className="skeleton-card" />
-                        </div>
-                        <div className="aem-GridColumn aem-GridColumn--default--3">
-                        <Skeleton className="skeleton-card" />
-                        </div>
-                        <div className="aem-GridColumn aem-GridColumn--default--3">
-                        <Skeleton className="skeleton-card" />
-                        </div>
-                        <div className="aem-GridColumn aem-GridColumn--default--3">
-                        <Skeleton className="skeleton-card" />
-                        </div>
-                        <div className="aem-GridColumn aem-GridColumn--default--3">
-                        <Skeleton className="skeleton-card" />
-                        </div> */}
+
                         Loading...
                         
                      

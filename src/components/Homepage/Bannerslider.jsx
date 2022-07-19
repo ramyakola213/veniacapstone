@@ -35,36 +35,26 @@ function Carousel() {
 
   return (
 
-<>
-    <section className="carousel">
-      <div className="aem-Grid aem-Grid--12 carouselInner" style={{ backgroundImage: `url(${images[currImg].img})` }}>
-    
-      
-         <div className="left aem-GridColumn aem-GridColumn--default--1 " onClick={() => {   currImg > 0 && setCurrImg(currImg - 1);  }} >
-         <img src={rightarrow} alt="chevron-right" className="chevron-right" />
-      </div> 
-      
-            <div className="aem-GridColumn aem-GridColumn--default--10 aem-GridColumn--phone--10 homepage_slider_content">
-                   <h1 className="display-m-30-">Shop the new {images[currImg].title}</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,{images[currImg].subtitle} Lobortis mattis aliquam faucibus purus.</p>
-               <div className="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--phone--12  button_wrap">
-                   <NavLink to="/Products"> <button type="submit"  className="primary_button" value="CONTINUE" >SHOP NOW</button></NavLink>
-               </div>
-
-             </div> 
-
-            
-            
-            
-        <div className="right aem-GridColumn aem-GridColumn--default--1 " onClick={() => {currImg < images.length - 1 && setCurrImg(currImg + 1);}}>
-        <img src={rightarrow} alt="chevron-right"/>
-        </div> 
-        
-      </div>
-    </section>
-    <Displayproducts></Displayproducts>
-    </>
-    
+           <>
+            <section className="carousel">
+              <div className="aem-Grid aem-Grid--12 carouselInner" style={{ backgroundImage: `url(${images[currImg].img})` }}>
+                <div className="left aem-GridColumn aem-GridColumn--default--1 " onClick={()=> { currImg > 0 && setCurrImg(currImg - 1); }} > <img src={rightarrow} alt="chevron-right" className="chevron-right" /> </div>
+                <div className="aem-GridColumn aem-GridColumn--default--10 aem-GridColumn--phone--10 homepage_slider_content">
+                  <h1 className="display-m-30-">Shop the new {images[currImg].title}</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,{images[currImg].subtitle} Lobortis mattis aliquam faucibus purus.</p>
+                  <div className="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--phone--12  button_wrap">
+                    <NavLink to="/Products">
+                      <button type="submit" className="primary_button" value="CONTINUE">SHOP NOW</button>
+                    </NavLink>
+                  </div>
+                </div>
+                <div className="right aem-GridColumn aem-GridColumn--default--1 " onClick={()=> {currImg
+                  < images.length - 1 && setCurrImg(currImg + 1);}}> <img src={rightarrow} alt="chevron-right" /> </div>
+              </div>
+            </section>
+                <Displayproducts></Displayproducts>
+           </>
+                
   );
 }
 

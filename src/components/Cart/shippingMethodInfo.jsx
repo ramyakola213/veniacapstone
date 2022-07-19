@@ -53,7 +53,6 @@ class ShoppingMethods extends Component {
                                 </AccordionItemButton>
                             </AccordionItemHeading>
                             <AccordionItemPanel>
-
                                 <div onChange={this.handleChangeShippingMethod}>
                                     <div className="aem-Grid aem-Grid--12 space-wrap">
                                         <input type="radio" value="standard" name="shipping" /> Standard Shipping (4-8 business days via USPS) FREE
@@ -67,8 +66,7 @@ class ShoppingMethods extends Component {
                                 </div>
                                 <div className="aem-Grid aem-Grid--12 checkout_wrapper__button_wrap ">
                                     <button type="submit"  className="secondary_button" value="CONTINUE" >CONTINUE TO PAYMENT METHOD</button>
-                                </div>
-                                
+                                </div>   
                             </AccordionItemPanel>
                         </AccordionItem>
                     </Accordion>

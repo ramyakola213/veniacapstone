@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { NavLink } from "react-router-dom";
-import bg from '../../assets/bg.jpg';
-import gradtwo from "../../assets/Swatch 02.png";
 import edit from "../../assets/edit-2.svg";
 import { saveContactInfo, saveShippingInfo } from '../../redux/action/index';
 
@@ -185,7 +183,6 @@ class CheckoutDetails extends Component {
                             <p>FREE</p><br/>
                         </div> : ''}</p>
                 </div> : ''}
-
             </div>
         )
     }

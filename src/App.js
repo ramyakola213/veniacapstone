@@ -21,7 +21,6 @@ function App() {
   return (
           <div>
             <Header></Header>
-          
             <Routes>
             <Route exact path="/" element={<Homepage/>}></Route>
               <Route exact path="/products" element={<Products/>}></Route>
@@ -31,7 +30,6 @@ function App() {
               <Route exact path="/checkout" element={ <CheckoutDetails/>}/>
               <Route exact path="/order" element={ <Order/>}/> </Routes>
             <Footer/>
-            
           </div>
   );
 }
