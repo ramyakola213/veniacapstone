@@ -1,0 +1,122 @@
+@import "/src/root.scss";
+
+
+
+
+.catelog_wrapper{
+
+    background-color: $white;
+
+    .catalogs{
+    
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+    top: -180px;
+    width: 86%;
+    z-index: 997;
+    background-color: $white;
+    }
+
+    .catalog-list{
+    
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 10px;
+    padding: 0 24px;
+    position: relative;
+    
+    .catalog-image{
+        align-items: center;
+        
+          img{
+            width: 150px;
+            height: 200px;
+            margin-left: 50px;
+          }
+          
+    }
+    a{
+        color: #fff;
+    }
+}
+
+    .catalog-tag {
+        background: #1B252CD9;
+        border-bottom: 4px solid $primary-m1;
+        bottom: 0;
+        color: $white;
+        padding: 10px;
+        position: absolute;
+        width: calc(100% - 20px);
+
+        span{
+            font-size: 12px;
+            
+        }
+    }
+}
+
+
+.homepage_content_wrapper{
+    margin: -90px 0px 20px 0px;
+   
+
+    .content_banner_one{
+
+        .banner_one_left{
+            margin: 30px 0;
+            padding: 40px 60px ;
+        }
+
+    }
+
+    .content_banner_two{
+        margin: 10px;
+        display: flex;
+
+        .banner_two_left{
+            margin:22px;
+        }
+        .banner_two_right{
+            background-color: #000;
+            color: $white;
+            padding:60px 90px;
+        }
+    
+        h1{
+            color: $white;
+        }
+    }
+
+    .button_wrap{
+        justify-content: left;
+        display: inline;
+    }
+
+    hr{
+        height: 8px;
+        margin-right:  70%;
+        margin-left:  2%;
+        background-color: $primary-brand;
+        border: 2px solid $primary-brand;
+        
+    }
+
+}
+
+
+
+
+@media (min-width: 600px) {
+    .catalogs{
+        display: flex;
+        
+      
+    }
+    .homepage_content_wrapper{
+       
+        margin: -90px 130px 20px 130px
+    }
+
+}
