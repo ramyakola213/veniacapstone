@@ -368,7 +368,16 @@ nav,
 .filter-input {
   display: none;
 }
+.cart_items_number{
+  background: black;
+  display:inline-block;
+  width:20px;
+  height: 20px;
+  border-radius: 100%;
+  color: $white;
+  margin: 5px 0px 0px -20px;
 
+}
 
 // Filters
 

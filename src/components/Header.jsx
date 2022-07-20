@@ -14,7 +14,7 @@ const Header = () => {
 
       <header>
             <div className="aem-Grid"> <i className="fas fa-bars dropdown">
-               <h1 className=""> <NavLink to="/">V E N I A </NavLink></h1>
+               <h1 className="/veniacapstone"> <NavLink to="/">V E N I A </NavLink></h1>
                <ul >
                   <li> <NavLink to="/cart" ><img src={cart} alt="user" className="icon-img" /></NavLink></li>
                </ul>
@@ -63,7 +63,7 @@ const Header = () => {
                </i> </div>
 
          <nav>
-         <NavLink to="/"> <h4 className="logo">V E N I A</h4></NavLink>
+         <NavLink to="/veniacapstone"> <h4 className="logo">V E N I A</h4></NavLink>
             <ul>
                <li><NavLink to="/Products" > Products </NavLink></li>
                <li><NavLink to="/Products" > Women </NavLink></li>
@@ -73,7 +73,7 @@ const Header = () => {
 
             </ul>
             <ul>
-               <li> <NavLink to="/cart" storeData={stateData ? stateData.length > 0 ? stateData : [] : []} ><img src={cart} alt="user" className="icon-img" />{stateData ? stateData.length > 0 ? stateData.length : '' : ''} </NavLink></li>
+               <li> <NavLink to="/cart"  storeData={stateData ? stateData.length > 0 ? stateData : [] : []} ><img src={cart} alt="user" className="icon-img" /> <h5 class="cart_items_number">{stateData ? stateData.length > 0 ? stateData.length : '0' : ''} </h5></NavLink></li>
             </ul>
          </nav>
 
