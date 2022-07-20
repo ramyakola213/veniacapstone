@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/veniacapstone/static/css/main.230deca8.css",
-    "main.js": "/veniacapstone/static/js/main.f32261a9.js",
+    "main.css": "/veniacapstone/static/css/main.e7ea969c.css",
+    "main.js": "/veniacapstone/static/js/main.b011f057.js",
     "static/js/787.f3f26a24.chunk.js": "/veniacapstone/static/js/787.f3f26a24.chunk.js",
     "static/media/sliderbgtwo.jpg": "/veniacapstone/static/media/sliderbgtwo.0f441e6da436b7e75161.jpg",
     "static/media/bgfour.jpg": "/veniacapstone/static/media/bgfour.f0339b6b81a9f868052b.jpg",
@@ -20,12 +20,12 @@
     "static/media/edit-2.svg": "/veniacapstone/static/media/edit-2.d86fb5c57c99ad0d8312adf90283ac77.svg",
     "static/media/facebook.svg": "/veniacapstone/static/media/facebook.b5b54c5572636785078aa70b8bdffe26.svg",
     "static/media/chevron-right.svg": "/veniacapstone/static/media/chevron-right.772b7ebe1b688b64d993fe52349d6489.svg",
-    "main.230deca8.css.map": "/veniacapstone/static/css/main.230deca8.css.map",
-    "main.f32261a9.js.map": "/veniacapstone/static/js/main.f32261a9.js.map",
+    "main.e7ea969c.css.map": "/veniacapstone/static/css/main.e7ea969c.css.map",
+    "main.b011f057.js.map": "/veniacapstone/static/js/main.b011f057.js.map",
     "787.f3f26a24.chunk.js.map": "/veniacapstone/static/js/787.f3f26a24.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.230deca8.css",
-    "static/js/main.f32261a9.js"
+    "static/css/main.e7ea969c.css",
+    "static/js/main.b011f057.js"
   ]
 }
