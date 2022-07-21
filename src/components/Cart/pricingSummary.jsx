@@ -9,8 +9,8 @@ const PricingSummary = (props) => {
     let estimatedShipping = 0.00;
     let subTotal = props.storeData && props.storeData.length > 0 ? props.storeData.reduce((total, item)=>total+(item.price*item.qty),0): 0;
     return (
-
-            <>
+          <>
+            <div className="pricing_wrapper">
                 <h3>Pricing Summary</h3>
                 <p>Subtotal  <span> ${subTotal}</span></p>
                 <p>Coupon  <span> ${couponAmount}</span></p>
@@ -19,6 +19,7 @@ const PricingSummary = (props) => {
                 <p>Estimated Shipping   <span>   ${estimatedShipping === '0.00' ? 'FREE' : estimatedShipping}</span></p>
                  <b><p>Estimated Total   <span> ${subTotal - couponAmount - giftCardAmount + estimatedTax + estimatedShipping}</span></p></b>
            
+            </div>
             </>
        
     );

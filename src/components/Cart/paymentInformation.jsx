@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import edit from "../../assets/edit-2.svg";
+import edit from "../../assets/edit-blue.svg";
 import { paymentCardInfo } from '../../redux/action/index';
 import {
     Accordion,
@@ -108,7 +108,7 @@ class PaymentInfo extends Component {
                 <div className="checkout_wrapper__edit_wrapper" >
                 <div className="aem-Grid aem-Grid--12">
                 <h5>Payment Information</h5>
-                <span onClick={() => this.updateMethodSubmittedFlag(false)}><img src={edit} alt="search" className="icon-img" />Edit</span>
+                <span  onClick={() => this.updateMethodSubmittedFlag(false)}><img src={edit} alt="search" className="icon-img" />Edit</span>
                 </div>
 
                     {this.props.paymentInfo.paymentDetails ? <div className="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12">

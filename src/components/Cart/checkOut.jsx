@@ -32,7 +32,7 @@ class CheckoutDetails extends Component {
                         <PaymentInfo />
 
                     </div>
-                    <div className="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12 checkout_wrapper__pricing_wrapper ml-10">
+                    <div className="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12 checkout_wrapper__pricing_wrapper ml-10 ">
                         <PricingSummary />
                     </div>
                 </div>

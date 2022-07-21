@@ -25,6 +25,8 @@
   }
   p{
       font-size: $venia-font-size-14;
+      display: block;
+      cursor: pointer;
   }
   .input,select{
         background: $white 0% 0% no-repeat padding-box;
@@ -106,6 +108,7 @@
       span{
           float:right;
           margin-top: -22px;
+          color:#2A65D7;
       }
  }
  .order-info{
@@ -113,6 +116,5 @@
             margin: 0;
       }
  }
-
-
+ 
 }

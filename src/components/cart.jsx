@@ -39,14 +39,14 @@ const Cart = (props) => {
                                     </div>
                                     {/* <p>{product.qty}</p> */}
                                 </div>
-                                <div className=" aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12" >
+                                <div className=" aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12 grid-div" >
                                     <ul data-accordion className=" size">
                                         <li ><button className="plus"  >-</button>   </li>
                                         <li ><button className="quant">1</button>     </li>
                                         <li ><button className="plus">+</button>    </li>
                                     </ul>
                                 </div>
-                                <div className=" aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12" >
+                                <div className=" aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12 gri-div" >
                                     <ul data-accordion className="categories">
                                         <li > <img src={edit} alt="search" className="icon-img" />Edit Item   </li>
                                         <li > <img src={trash} alt="search" className="icon-img" />Remove    </li>

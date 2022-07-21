@@ -251,6 +251,7 @@ input[type="checkbox"] {
 ul {
   list-style: none;
   margin-left: -40px;
+  cursor: pointer;
 }
 
 //For LOADING 
@@ -344,7 +345,7 @@ ul {
 
   .size,
   .categories {
-    margin: 20px;
+    margin: 20px 10px;
 
   }
 }
@@ -401,6 +402,11 @@ nav,
   }
 
 }
+.grid-div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .colors {
 
@@ -410,6 +416,7 @@ nav,
 
   button {
     @include buttons;
+    cursor: pointer;
 
     &.pink {
       background: $color-1;
@@ -489,6 +496,7 @@ nav,
     @include buttons;
     background: $white;
     border: 2px solid #B5B7BC;
+    cursor: pointer;
 
     &.plus {
       border-radius: 100%;
@@ -507,6 +515,7 @@ nav,
   width: 20px;
   padding: 0 2px;
   margin: 0 4px;
+  cursor: pointer;
 }
 
 footer {
@@ -554,7 +563,7 @@ footer {
 
 // for Tablet
 
-@media (min-width:730px) {
+@media (min-width:730px)  {
 
   .container {
     margin: 0px 150px;
@@ -721,6 +730,7 @@ footer {
   }
 
   .lead {
+    cursor: pointer;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -728,6 +738,7 @@ footer {
 
 
   .cart {
+    cursor: pointer;
     width: 20px 150px;
 
     h1 {
@@ -744,13 +755,15 @@ footer {
       flex-direction: row;
 
       .card-img {
-        height: 180px;
+        height: 150px;
+        width: 130px;
       }
     }
 
     .size,
     .categories {
-      margin: 20px;
+      cursor: pointer;
+      // margin: 20px;
 
     }
   }

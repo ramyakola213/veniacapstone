@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import edit from "../../assets/edit-2.svg";
+import edit from "../../assets/edit-blue.svg";
 import { saveContactInfo } from '../../redux/action/index';
 import {
     Accordion,

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import edit from "../../assets/edit-2.svg";
+import edit from "../../assets/edit-blue.svg";
 import { saveShippingInfo } from '../../redux/action/index';
 import {
     Accordion,
@@ -82,7 +82,7 @@ class ShoppingMethods extends Component {
             <div className="checkout_wrapper__edit_wrapper" >
             <div className="aem-Grid aem-Grid--12">
             <h5>Shopping Method</h5>
-            <span onClick={() => this.updateShippingMethodSubmittedFlag(false)}><img src={edit} alt="search" className="icon-img" />Edit</span>
+            <span  onClick={() => this.updateShippingMethodSubmittedFlag(false)}><img src={edit} alt="search" className="icon-img " />Edit</span>
             </div>
 
        
