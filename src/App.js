@@ -1,21 +1,20 @@
 import Header from './components/Header/Header';
-import Products from './components/Products';
+import Products from './components/Productshop/Products';
 import Footer from './components/Footer/Footer';
-import ProductList from './components/ProductList';
-import ProductDetails from './components/ProductDetails';
-import Cart from './components/cart';
+import ProductList from './components/Productshop/ProductList';
+import ProductDetails from './components/Productshop/ProductDetails';
+import Cart from './components/Productshop/cart';
 import CheckoutDetails from './components/Cart/checkOut';
 import Order from './components/Cart/Order';
 import Homepage from './components/Homepage/Homepage';
+import Errorpage from './components/Productshop/error404';
 import {
   BrowserRouter as Router,
   Route,
   Routes
 } from "react-router-dom";
-
-
 import './App.scss';
-import './root.scss';
+import './root-scss/root.scss';
 
 
 function App() {
@@ -24,6 +23,7 @@ function App() {
             <Header></Header>
             
             <Routes>
+            <Route exact path="" element={<Homepage/>}></Route>
             <Route exact path="/veniacapstone" element={<Homepage/>}></Route>
               <Route exact path="/products" element={<Products/>}></Route>
               <Route exact path="/productList" element={ <ProductList/>}></Route>

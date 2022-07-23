@@ -1,9 +1,6 @@
 import React, { useState } from "react";
-import '../../components/Homepage/Bannerslider.scss';
+import '../../components/Homepage/scss/Bannerslider.scss';
 import {NavLink} from "react-router-dom";
-// import { images } from "../Helpers/CarouselData";
-// import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
-// import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 import rightarrow from "../../assets/chevron-right.svg";
 import one from "../../assets/sliderbgone.jpg";
 import four from "../../assets/bgfour.jpg";

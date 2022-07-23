@@ -1,9 +1,9 @@
 
 import React, { useState, useEffect} from "react";
-import heart from '../assets/heart.svg';
+import heart from '../../assets/heart.svg';
 import "react-loading-skeleton/dist/skeleton.css";
 import {NavLink} from "react-router-dom";
-import ProductDetails from "./ProductDetails";
+import ProductDetails from "../Productshop/ProductDetails";
 
 
 

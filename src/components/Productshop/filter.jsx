@@ -2,7 +2,7 @@
 import React, { useState, useEffect} from "react";
 import "react-loading-skeleton/dist/skeleton.css";
 import {NavLink} from "react-router-dom";
-import ProductDetails from "./ProductDetails";
+import ProductDetails from "../../components/Productshop/ProductDetails";
 
 
 

@@ -1,7 +1,7 @@
 
 import React from "react";
 import signature from "../../assets/signature-legg.jpg";
-import '../Homepage/homepage.scss';
+import '../Homepage/scss/homepage.scss';
 import Carousel from './Bannerslider';
 import Content from './Contentpage';
 // import Filter from '../../components/filter';

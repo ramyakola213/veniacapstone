@@ -1,6 +1,6 @@
 import React from "react";
-import bg from "../assets/bg.jpg";
-import ProductList from "./ProductList";
+import bg from "../../assets/bg.jpg";
+import ProductList from "../Productshop/ProductList";
 
 
 

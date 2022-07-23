@@ -12,9 +12,9 @@ const Header = () => {
    return (
 
 
-      <header>
+      <header class="venia_header">
             <div className="aem-Grid"> <i className="fas fa-bars dropdown">
-               <h1 className="/veniacapstone"> <NavLink to="/">V E N I A </NavLink></h1>
+               <h1 className=""> <NavLink to="veniacapstone">V E N I A </NavLink></h1>
                <ul >
                   <li> <NavLink to="/cart" ><img src={cart} alt="user" className="icon-img" /></NavLink></li>
                </ul>

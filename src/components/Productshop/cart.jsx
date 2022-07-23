@@ -1,14 +1,14 @@
 
 import React, { useState, useEffect } from "react";
 import "react-loading-skeleton/dist/skeleton.css";
-import trash from "../assets/trash-2.svg";
-import edit from "../assets/edit-2.svg";
-import heart from "../assets/heart.svg";
-import paypal from "../assets/paypal.png";
+import trash from "../../assets/trash-2.svg";
+import edit from "../../assets/edit-2.svg";
+import heart from "../../assets/heart.svg";
+import paypal from "../../assets/paypal.png";
 import { NavLink } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { toHaveDescription } from "@testing-library/jest-dom/dist/matchers";
-import PricingSummary  from './Cart/pricingSummary'
+import PricingSummary  from '../Cart/pricingSummary';
 
 
 const Cart = (props) => {

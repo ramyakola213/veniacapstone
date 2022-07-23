@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-import { addCart } from '../redux/action';
+import { addCart } from '../../redux/action';
 import { useParams } from 'react-router';
 import { NavLink } from "react-router-dom";
-import edit from "../assets/edit-2.svg";
-import heart from "../assets/heart.svg";
-import gradone from "../assets/Swatch 01.png";
-import gradtwo from "../assets/Swatch 02.png";
-import gradfour from "../assets/Swatch 04.png";
+import edit from "../../assets/edit-2.svg";
+import heart from "../../assets/heart.svg";
+import gradone from "../../assets/Swatch 01.png";
+import gradtwo from "../../assets/Swatch 02.png";
+import gradfour from "../../assets/Swatch 04.png";
 
 
 const ProductDetails = () => {
