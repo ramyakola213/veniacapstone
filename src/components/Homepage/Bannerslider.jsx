@@ -41,7 +41,7 @@ function Carousel() {
                 <div className="left aem-GridColumn aem-GridColumn--default--1 " onClick={()=> { currImg > 0 && setCurrImg(currImg - 1); }} > <img src={rightarrow} alt="chevron-right" className="chevron-right" /> </div>
                 <div className="aem-GridColumn aem-GridColumn--default--10 aem-GridColumn--phone--10 homepage_slider_content">
                   <h1 className="display-m-30-">Shop the new {images[currImg].title}</h1>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,{images[currImg].subtitle} Lobortis mattis aliquam faucibus purus.</p>
+                  <p>Our products represent your moments in time, your special places, time spent with loved ones, your once in a life times. {images[currImg].subtitle}.</p>
                   <div className="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--phone--12  button_wrap">
                     <NavLink to="/Products">
                       <button type="submit" className="primary_button" value="CONTINUE">SHOP NOW</button>

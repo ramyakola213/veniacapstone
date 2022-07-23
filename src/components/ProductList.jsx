@@ -81,10 +81,10 @@ const ProductList = ()=>{
                              <hr></hr>  
                              Categories        
                          <ul data-accordion className="categories cat"> 
-                          <li  onClick={()=>filterProduct("women's clothing")}><input type="checkbox" id="high" /> Women's Collection </li>
-                          <li  onClick={()=> filterProduct("men's clothing")}><input type="checkbox" id="low" /> Men's collection </li>
-                          <li  onClick={()=>filterProduct("jewelery")} ><input type="checkbox" id="boots"/> Jewelery</li>
-                          <li  onClick={()=>filterProduct("electronics")}><input type="checkbox" id="all" /> Electronics</li>
+                          <li  onClick={()=>filterProduct("women's clothing")}><input type="checkbox"  /> Women's Collection </li>
+                          <li  onClick={()=> filterProduct("men's clothing")}><input type="checkbox"  /> Men's collection </li>
+                          <li  onClick={()=>filterProduct("jewelery")} ><input type="checkbox" /> Jewelery</li>
+                          <li  onClick={()=>filterProduct("electronics")}><input type="checkbox" /> Electronics</li>
                          </ul>
                          <hr></hr>
                         

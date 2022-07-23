@@ -1,7 +1,7 @@
 import React from "react";
-import facebook from "../assets/facebook.svg";
-import twitter from "../assets/twitter.svg";
-import insta from "../assets/instagram.svg";
+import facebook from "../../assets/facebook.svg";
+import twitter from "../../assets/twitter.svg";
+import insta from "../../assets/instagram.svg";
 
 
 
@@ -38,7 +38,7 @@ const Footer = ()=>{
                    <div className="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12">
                      <ul>
                         <li><h4>Follow Us!</h4></li>
-                        <li><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.<br></br>
+                        <li><p>Our products represent your moments in time, your special places, time spent with loved ones, your once in a life times.<br></br>
                         <img src={insta} alt="search" className="icon-img"/><img src={facebook} alt="search" className="icon-img" style={{width:'15px'}}/><img src={twitter} alt="search" className="icon-img"/></p></li>
                        
                      </ul>

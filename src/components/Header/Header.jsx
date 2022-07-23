@@ -1,5 +1,5 @@
 import React from "react";
-import cart from "../assets/cart.svg";
+import cart from "../../assets/cart.svg";
 import { NavLink } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 
@@ -65,11 +65,11 @@ const Header = () => {
          <nav>
          <NavLink to="/veniacapstone"> <h4 className="logo">V E N I A</h4></NavLink>
             <ul>
-               <li><NavLink to="/Products" > Products </NavLink></li>
-               <li><NavLink to="/Products" > Women </NavLink></li>
-               <li> <NavLink to="/Products" >Men </NavLink></li>
-               <li> <NavLink to="/Products" >Electronics </NavLink></li>
-               <li><NavLink to="/Products" > Jewellary</NavLink></li>
+               <li><NavLink to="/products" > Products </NavLink></li>
+               <li><NavLink to="/products" > Women </NavLink></li>
+               <li> <NavLink to="/products" >Men </NavLink></li>
+               <li> <NavLink to="/products" >Electronics </NavLink></li>
+               <li><NavLink to="/products" > Jewellary</NavLink></li>
 
             </ul>
             <ul>

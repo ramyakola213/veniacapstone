@@ -267,9 +267,7 @@ ul {
   margin: 20px;
 }
 
-.product-details {
-  margin: 20px 15px;
-}
+
 
 
 .product-card {
@@ -627,7 +625,10 @@ footer {
     width: 255px;
   }
 
-
+  .product-details {
+    overflow: hidden;
+    margin: 0px 0px;
+  }
 
   .banner {
 

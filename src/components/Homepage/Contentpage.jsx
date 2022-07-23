@@ -13,8 +13,8 @@ const Content = () =>{
 		   <article>	
 		      <div class="banner_one_left">		
 			<h1 className="display-m-30-">Take off in the new Signature Legging</h1>
-                        <h3 className="mt-10">Lorem Ipsum Dolor Tempor</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <h3 className="mt-10">Our products represent your moments in time</h3>
+			<p>Our products represent your moments in time, your special places, time spent with loved ones, your once in a life times.</p>
 			<div className="aem-GridColumn aem-GridColumn--default--12  button_wrap">
 				<NavLink to="/Products" className="mr-20">
 					<button type="submit" className="secondary_button " value="CONTINUE">SHOP COLLECTION</button>
@@ -35,7 +35,7 @@ const Content = () =>{
 		 </div>
 		 <div className="aem-GridColumn aem-GridColumn--default--5 aem-GridColumn--phone--12 banner_two_right">
 			<h1 className="display-m-30-">Conquer your next adventure</h1>
-			<p>Lorem Ipsum Dolor Tempor</p>
+			<p>Our products represent your moments in time</p>
 			<div className="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--phone--12  button_wrap">
 				<NavLink to="/Products">
 					<button type="submit" className="secondary_button content-btn" value="CONTINUE">SHOP NOW</button>
