@@ -1,0 +1,16 @@
+.displaycart-wrap__content {
+  margin-top: 5px;
+  border: 1px solid #D1D3D6;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5px;
+}
+
+.displaycart-wrap__show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=accord.css.map */

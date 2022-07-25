@@ -3,7 +3,7 @@ import Products from './components/Productshop/Products';
 import Footer from './components/Footer/Footer';
 import ProductList from './components/Productshop/ProductList';
 import ProductDetails from './components/Productshop/ProductDetails';
-import Cart from './components/Productshop/cart';
+import Cart from './components/Productshop/Displaycart';
 import CheckoutDetails from './components/Cart/checkOut';
 import Order from './components/Cart/Order';
 import Homepage from './components/Homepage/Homepage';

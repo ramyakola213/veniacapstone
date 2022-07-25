@@ -19,9 +19,7 @@ const ProductDetails = () => {
         const [loading, setLoading] = useState(false);
 
         const dispatch = useDispatch();
-        const addProduct = (product) => {
-                dispatch(addCart(product));
-        }
+
 
         let componentMounted = true;
 
@@ -49,6 +47,34 @@ const ProductDetails = () => {
                         </>
                 )
         }
+
+    
+
+                let textInput = React.createRef();
+            
+                let [num, setQuantity] = useState(1);
+              
+                let increaseQuantity = () => {
+                    if (num < 20) {
+                    setQuantity(Number(num) + 1);
+                    }
+                };
+            
+                let decreaseQuantity = () => {
+                    if (num > 0) {
+                    setQuantity(num - 1);
+                    }
+                }
+            
+                let handleChange = (e) => {
+                    setQuantity(e.target.value);
+                }
+
+                const addProduct = (product) => {
+                        let item = { ...product, quantity: num }
+                        dispatch(addCart(product));
+                }
+        
         const ShowProductDetails = () => {
                 return (
                         <>
@@ -93,15 +119,14 @@ const ProductDetails = () => {
 
                                         </ul>
                                            <p className='regular-heading-s-14-'>Quantity</p>
-                                        <ul data-accordion className="categories size">
-                                                <li ><button className="plus"  >-</button>   </li>
-                                                <li ><button className="quant">1</button>     </li>
-                                                <li ><button className="plus">+</button>    </li>
+                                           <ul data-accordion className="categories size">
+                                              <li ><button className="plus" onClick={decreaseQuantity} >-</button>   </li>
+                                              <li ><input  className="quant" ref={textInput}  value={num} onChange={handleChange}></input>   </li>
+                                              <li ><button className="plus" onClick={increaseQuantity}>+</button>    </li>
+                                           </ul>
 
-
-                                        </ul>
                                         <NavLink to="/Cart">
-                                                <button className="add-to-cart" onClick={() => addProduct(product)}>
+                                                <button className="add-to-cart" onClick={() => addProduct(product)}  >
                                                         Add to Cart
                                                 </button>
                                         </NavLink>

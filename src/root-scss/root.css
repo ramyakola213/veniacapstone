@@ -1,0 +1,169 @@
+/* Colors: */
+/* Font/text values */
+/* Character Styles */
+.display-xl-48-dekstop-only {
+  font-family: Muli;
+  font-style: normal;
+  font-weight: 600px;
+  letter-spacing: 0px;
+  color: #172026;
+  font-size: 48px;
+  line-height: 60px;
+}
+
+.display-l-36- {
+  font-family: Muli;
+  font-style: normal;
+  font-weight: 600px;
+  letter-spacing: 0px;
+  color: #172026;
+  font-size: 36px;
+  line-height: 45px;
+}
+
+.display-m-30- {
+  font-family: Muli;
+  font-style: normal;
+  font-weight: 600px;
+  letter-spacing: 0px;
+  color: #172026;
+  font-size: 30px;
+  line-height: 30px;
+  font-family: Source Serif Pro;
+}
+
+.display-m-24- {
+  font-family: Muli;
+  font-style: normal;
+  font-weight: 600px;
+  letter-spacing: 0px;
+  color: #172026;
+  font-size: 26px;
+  line-height: 30px;
+  font-family: Source Serif Pro;
+}
+
+.display-s-20- {
+  font-family: Muli;
+  font-style: normal;
+  font-weight: 600px;
+  letter-spacing: 0px;
+  color: #172026;
+  font-size: 20px;
+  line-height: 25px;
+  font-family: Source Serif Pro;
+}
+
+.regular-heading-xl-24- {
+  font-family: Muli;
+  font-style: normal;
+  font-weight: 600px;
+  letter-spacing: 0px;
+  color: #172026;
+  font-size: 26px;
+  line-height: 30px;
+}
+
+.regular-heading-l-20- {
+  font-family: Muli;
+  font-style: normal;
+  font-weight: 600px;
+  letter-spacing: 0px;
+  color: #172026;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.regular-heading-m-16- {
+  font-family: Muli;
+  font-style: normal;
+  font-weight: 600px;
+  letter-spacing: 0px;
+  color: #172026;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.regular-heading-s-14- {
+  font-family: Muli;
+  font-style: normal;
+  font-weight: 600px;
+  letter-spacing: 0px;
+  color: #172026;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17.5px;
+}
+
+.regular-body-l-20- {
+  font-size: 20px;
+  line-height: 30px;
+  font-family: Muli;
+  font-style: normal;
+  font-weight: 600px;
+  letter-spacing: 0px;
+  color: #172026;
+}
+
+.regualr-body-m-16- {
+  font-family: Muli;
+  font-style: normal;
+  font-weight: 600px;
+  letter-spacing: 0px;
+  color: #172026;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.regular-body-s-14- {
+  font-family: Muli;
+  font-style: normal;
+  font-weight: 600px;
+  letter-spacing: 0px;
+  color: #172026;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.blockquote {
+  font-family: Muli;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0px;
+  color: #181C24;
+}
+
+.numbered-list {
+  font-family: Muli;
+  font-style: normal;
+  font-weight: 600px;
+  letter-spacing: 0px;
+  color: #172026;
+  font-size: 16px;
+  line-height: 32px;
+  color: #181C24;
+}
+
+.mr-10 {
+  margin-right: 10px;
+}
+
+.mr-20 {
+  margin-right: 20px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.pl-10 {
+  padding-left: 10px;
+}
+
+.pr-10 {
+  margin-right: 10px;
+}
+/*# sourceMappingURL=root.css.map */

@@ -7,12 +7,12 @@ import { useDispatch, useSelector } from "react-redux";
 
 const Header = () => {
    const stateData = useSelector(state => state.handleCart)
-   console.log('state Data', stateData)
+   // console.log('state Data', stateData)
 
    return (
 
 
-      <header class="venia_header">
+      <header class="venia--header">
             <div className="aem-Grid"> <i className="fas fa-bars dropdown">
                <h1 className=""> <NavLink to="veniacapstone">V E N I A </NavLink></h1>
                <ul >

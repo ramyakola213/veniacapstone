@@ -58,9 +58,9 @@ body {
 
 //  HEADER STYLES STARTS HERE
 
-header {
+.venia--header {
   background: $primary-brand;
-  padding: 20px 0;
+  padding: 20px 30px;
   width: 100%;
   color: $white;
   top: 0;
@@ -272,6 +272,9 @@ ul {
     width: 20px;
     padding-top: 4px;
   }
+  &_product--title{
+    text-transform: lowercase;
+  }
 
 }
 
@@ -312,6 +315,9 @@ ul {
 
     .card-mobile {
       flex-direction: row;
+    }
+    &_product--title{
+      text-transform: lowercase;
     }
   }
 
@@ -481,7 +487,67 @@ nav,
     }
 
   }
+  &:focus{
+    background-color:red;
+  }
+  input {
+    @include buttons;
+    background: $white;
+    border: 2px solid #B5B7BC;
+    cursor: pointer;
+  }
+  &.quant {
+    width: 50px;
+    padding: 16px 20px;
+  }
+
 }
+.product-details {
+  overflow: hidden;
+  margin: 10px 20px;
+}
+.displaycart-wrap{
+  display: block;
+  border-radius: 2px;
+  width: 100%;
+
+  .displaycart-wrap__row{
+      display: block;
+      width: 100%;
+      border: 1px solid #D1D3D6;
+      padding: 24px 10px;
+      .displaycart-wrap__toggle {
+          cursor: pointer;
+      }
+      .displaycart-wrap__left{
+          color: #172026;
+          font-size: 20px;
+      }
+      .displaycart-wrap__right{
+          color: #172026;
+          font-size: 14px;
+          margin-left: 10px;
+          float: right;
+          .displaycart-wrap__downarrow{
+              
+              display: inline;
+              width: 13px;
+              height: 13px;
+              background-size: 100%;
+              margin-left: 10px;
+          }
+          .displaycart-wrap__uparrow{
+             
+              display: inline;
+              width: 13px;
+              height: 13px;
+              background-size: 100%;
+              margin-left: 10px;
+          }
+      }
+  }
+}
+
 
 .icon-img {
   width: 20px;
@@ -640,6 +706,10 @@ footer {
 
     display:inline;
   }
+  .product-list {
+    margin: 20px 0px;
+  }
+  
 
   .product-card {
 
@@ -662,6 +732,9 @@ footer {
         padding: 10px;
 
 
+      }
+      &_product--title{
+        text-transform: lowercase;
       }
 
 
@@ -776,6 +849,17 @@ footer {
     padding: 0 2px;
     margin: 0 4px;
   }
-
+  .displaycart-wrap__row{
+    display: block;
+    width: 100%;
+    border: 1px solid #D1D3D6;
+    padding: 10px 10px;
+  }
+  .displaycart-wrap__right{
+    color: #172026;
+    font-size: 14px;
+    margin-left: 0px;
+    float: right;
+  }
 
 }

@@ -9,17 +9,53 @@ import { NavLink } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { toHaveDescription } from "@testing-library/jest-dom/dist/matchers";
 import PricingSummary  from '../Cart/pricingSummary';
+import Accord from './accord';
+
+
 
 
 const Cart = (props) => {
     const storeData = useSelector(state => state);
+
     
+
+    const Quantity = (props) => {
+
+        let inputval = React.createRef();
+    
+        let [num, setQuantity] = useState(props.total);
+    
+        let increaseQuantity = () => {
+            if (num < 10) {
+            setQuantity(Number(num) + 1);
+            }
+        };
+    
+        let decreaseQuantity = () => {
+            if (num > 0) {
+            setQuantity(num - 1);
+            }
+        }
+    
+        let handleChange = (e) => {
+            setQuantity(e.target.value);
+        }
+    
+        return ( 
+            <ul data-accordion className="categories size" >
+            <li ><button className="plus" onClick={decreaseQuantity} >-</button>   </li>
+            <li ><input type="text" className="quant" ref={inputval}  value={num} onChange={handleChange}/>   </li>
+            <li ><button className="plus" onClick={increaseQuantity}>+</button>    </li>
+            
+     </ul>
+        );
+    }
     const ItemsDetails = () => {
         return (
             <>
 
              <div className="aem-Grid aem-Grid--12"><h1>Your shopping Bag</h1><hr></hr></div>
-
+             <div className="aem-Grid aem-Grid--12">
                 {storeData && storeData.handleCart && storeData.handleCart.length > 0 ? storeData.handleCart.map((product) => {
                     return (
                         <>
@@ -40,15 +76,11 @@ const Cart = (props) => {
                                     {/* <p>{product.qty}</p> */}
                                 </div>
                                 <div className=" aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12 grid-div" >
-                                    <ul data-accordion className=" size">
-                                        <li ><button className="plus"  >-</button>   </li>
-                                        <li ><button className="quant">1</button>     </li>
-                                        <li ><button className="plus">+</button>    </li>
-                                    </ul>
+                                   <Quantity total={product.qty}/>
                                 </div>
                                 <div className=" aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12 gri-div" >
                                     <ul data-accordion className="categories">
-                                        <li > <img src={edit} alt="search" className="icon-img" />Edit Item   </li>
+                                        <li >  <NavLink to={`/products/${product.id}`}> <img src={edit} alt="search" className="icon-img" />Edit Item  </NavLink> </li>
                                         <li > <img src={trash} alt="search" className="icon-img" />Remove    </li>
                                         <li > <img src={heart} alt="search" className="icon-img" />Save for later    </li>
                                     </ul>
@@ -61,17 +93,44 @@ const Cart = (props) => {
                 }) : 'No Items in Cart to Display'
                 }
 
+                
+             
                 {storeData && storeData.handleCart && storeData.handleCart.length > 0 ? 
                 <PricingSummary storeData={storeData.handleCart}></PricingSummary>
  
                          : ''
 
                 }
-                    <div className="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--phone--12  button_wrap">                        
+                </div>  
+                
+                {/* <div className="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--phone--12  button_wrap">                        
                         <NavLink to="/Checkout"> <button type="submit"  className="primary_button" value="CONTINUE" >CHECKOUT</button></NavLink>
-                      {/* <img src={paypal}></img> */}
-                    </div>
+                        {/* <img src={paypal}></img> 
+                </div> */}
 
+                <div className="aem-Grid aem-Grid--12">
+                <div className=" aem-GridColumn aem-GridColumn--default--9 aem-GridColumn--phone--12" >
+
+                        <div className="displaycart-wrap">
+                            <div className="displaycart-wrap__row">
+                                <Accord heading="Estimation your shipping">
+                                    Estimation shipping details...
+                                </Accord> 
+                            </div>
+                            <div className="displaycart-wrap__row">
+                            <Accord heading="Enter a coupon code">
+                                   Coupon code details...
+                            </Accord> 
+                            </div>
+                            <div className="displaycart-wrap__row">
+                            <Accord heading="Apply gift card">
+                                   Gift card details:..
+                            </Accord>
+                            </div>
+                        </div>
+                   
+                  </div>
+                  </div>
             </>
         )
     }

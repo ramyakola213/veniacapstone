@@ -6,40 +6,40 @@ import ProductDetails from "../../components/Productshop/ProductDetails";
 
 
 
-const Filter = ()=>{
+const Filter = (props)=>{
 
-        const [data, setData] = useState([]);
-        const [filter, setFilter] = useState(data);
+        // const [data, setData] = useState([]);
+        // const [filter, setFilter] = useState(data);
        
-        let componentMounted = true;
+        // let componentMounted = true;
 
-        useEffect(() => {
+        // useEffect(() => {
 
-                const getProducts = async () => {
+        //         const getProducts = async () => {
                        
-                        const response = await fetch("https://fakestoreapi.com/products");
-                        if (componentMounted) {
-                                setData(await response.clone().json());
-                                setFilter(await response.json());
+        //                 const response = await fetch("https://fakestoreapi.com/products");
+        //                 if (componentMounted) {
+        //                         setData(await response.clone().json());
+        //                         setFilter(await response.json());
                                
-                                console.log(filter);
+        //                         // console.log(filter);
 
 
-                        }
-                        return () => {
-                                componentMounted = false;
-                        }
-                }
+        //                 }
+        //                 return () => {
+        //                         componentMounted = false;
+        //                 }
+        //         }
 
-                getProducts();
+        //         getProducts();
 
-        }, []);
+        // }, []);
 
-        const filterProduct =(cat)=>{
-                const updatedList = data.filter((x)=>x.category == cat);
-                setFilter(updatedList);
+        // const filterProduct =(cat)=>{
+        //         const updatedList = data.filter((x)=>x.category == cat);
+        //         setFilter(updatedList);
 
-        }
+        // }
 
         return(
 
@@ -50,10 +50,10 @@ const Filter = ()=>{
                     <hr></hr>  
                     Categories        
                 <ul data-accordion className="categories cat"> 
-                 <li  onClick={()=>filterProduct("women's clothing")}><input type="checkbox" id="high" /> Women's Collection </li>
-                 <li  onClick={()=> filterProduct("men's clothing")}><input type="checkbox" id="low" /> Men's collection </li>
-                 <li  onClick={()=>filterProduct("jewelery")} ><input type="checkbox" id="boots"/> Jewelery</li>
-                 <li  onClick={()=>filterProduct("electronics")}><input type="checkbox" id="all" /> Electronics</li>
+                 <li  ><input onClick={()=>props.filterProduct("women's clothing")}  type="checkbox" id="high" /> Women's Collection </li>
+                 <li  onClick={()=>props.filterProduct("men's clothing")}><input type="checkbox" id="low" /> Men's collection </li>
+                 <li  onClick={()=>props.filterProduct("jewelery")} ><input type="checkbox" id="boots"/> Jewelery</li>
+                 <li  onClick={()=>props.filterProduct("electronics")}><input type="checkbox" id="all" /> Electronics</li>
                 </ul>
                 <hr></hr>
                
