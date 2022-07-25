@@ -5,6 +5,8 @@ import "react-loading-skeleton/dist/skeleton.css";
 import {NavLink} from "react-router-dom";
 import ProductDetails from "../Productshop/ProductDetails";
 import Filter from "./filter";
+import Loader from './loader';
+
 
 
 const ProductList = ()=>{
@@ -31,15 +33,11 @@ const ProductList = ()=>{
         }, []);
 
         const Loading = () => {
-                return (
+                return 
+                (
                         <>
-
-                        Loading...
-                        
-                     
+                         <Loader/>
                         </>
-
-
                 )
         }
 
@@ -100,8 +98,7 @@ const ProductList = ()=>{
         return (
 
                 <div className="product-list">
-                    <div className="aem-Grid">
-               
+                    <div className="aem-Grid">             
                       <div className="aem-Grid aem-Grid--12">
                              
                              { loading ? <Loading /> : <ShowProductList /> }

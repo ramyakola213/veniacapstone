@@ -8,6 +8,7 @@ import heart from "../../assets/heart.svg";
 import gradone from "../../assets/Swatch 01.png";
 import gradtwo from "../../assets/Swatch 02.png";
 import gradfour from "../../assets/Swatch 04.png";
+import Loader from './loader';
 
 
 const ProductDetails = () => {
@@ -42,16 +43,13 @@ const ProductDetails = () => {
         const Loading = () => {
                 return (
                         <>
-
-                                Loading...
+                           <Loader/>
                         </>
                 )
         }
 
-    
 
-                let textInput = React.createRef();
-            
+                let inputVal = React.createRef();
                 let [num, setQuantity] = useState(1);
               
                 let increaseQuantity = () => {
@@ -75,10 +73,10 @@ const ProductDetails = () => {
                         dispatch(addCart(product));
                 }
         
-        const ShowProductDetails = () => {
+               const ShowProductDetails = () => {
                 return (
                         <>
-                                <div className="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12">
+                              <div className="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12">
                                         <ul className="pd-ul">
                                                 <li> <img src={product.image} alt={product.title} height="100px" width="80px" />  </li>
                                                 <li> <img src={product.image} alt={product.title} height="100px" width="80px" />  </li>
@@ -121,7 +119,7 @@ const ProductDetails = () => {
                                            <p className='regular-heading-s-14-'>Quantity</p>
                                            <ul data-accordion className="categories size">
                                               <li ><button className="plus" onClick={decreaseQuantity} >-</button>   </li>
-                                              <li ><input  className="quant" ref={textInput}  value={num} onChange={handleChange}></input>   </li>
+                                              <li ><input  className="quant" ref={inputVal}  value={num} onChange={handleChange}></input>   </li>
                                               <li ><button className="plus" onClick={increaseQuantity}>+</button>    </li>
                                            </ul>
 

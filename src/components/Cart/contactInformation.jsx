@@ -110,10 +110,10 @@ class GuestContactInformation extends Component {
                                         <label>
                                             Country<br />
                                             <select value={this.state.country} onChange={(event) => this.handleChange('country', event)} >
-                                                {/* <option value="United States">United States</option> */}
+                                                <option value="United States">United States</option> 
                                                 <option value="India">India</option>
-                                                {/* <option value="Uk">UK</option> */}
-                                                {/* <option value="New Zeland">New Zeland</option> */}
+                                                <option value="Uk">UK</option>
+                                                <option value="New Zeland">New Zeland</option> 
                                             </select>
                                         </label>
                                     </div>

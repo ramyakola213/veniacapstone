@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,0BAA0B,CAAC;EACnB,UAAU,EAAE,GAAG;EACf,MAAM,EAAE,iBAAiB;EACzB,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,OAAO,EAAE,GAAG;CACb;;AAED,AAAA,uBAAuB,CAAC;EACtB,OAAO,EAAE,IAAI;CACd",
-    "sources": [
-        "accord.scss"
-    ],
-    "names": [],
-    "file": "accord.css"
-}

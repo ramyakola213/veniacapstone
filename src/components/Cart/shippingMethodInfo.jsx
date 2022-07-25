@@ -100,7 +100,7 @@ class ShoppingMethods extends Component {
     }
     render() {
         if (this.props.shippinginfo) {
-            // debugger
+           
         }
         return (
 

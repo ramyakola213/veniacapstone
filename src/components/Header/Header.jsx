@@ -7,7 +7,6 @@ import { useDispatch, useSelector } from "react-redux";
 
 const Header = () => {
    const stateData = useSelector(state => state.handleCart)
-   // console.log('state Data', stateData)
 
    return (
 
@@ -17,7 +16,7 @@ const Header = () => {
             <i className="fas fa-bars dropdown">
                <h1 className=""> <NavLink to="veniacapstone">V E N I A </NavLink></h1>
                 <ul>
-                  <li> <NavLink to="/cart" ><img src={cart} alt="user" className="icon-img" /></NavLink></li>
+                <li> <NavLink to="/cart"  storeData={stateData ? stateData.length > 0 ? stateData : [] : []} ><img src={cart} alt="user" className="icon-img" /> <h5 class="cart_items_number">{stateData ? stateData.length > 0 ? stateData.length : '0' : ''} </h5></NavLink></li>
                 </ul>
             </i> 
          </div>

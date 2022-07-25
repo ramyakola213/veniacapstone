@@ -83,11 +83,7 @@ class CheckoutDetails extends Component {
     }
 
     handleBtnSubmit(event) {
-        // const infoData = {
-        //     ...this.props.contactInformation.contactDetails,
-        //     shippingMethodSubmitted: true,
-        //     shippingval: this.state.shippingval
-        // }
+
         this.setState({ shippingMethod: {shippingMethodSubmitted: true} })
         this.props.saveShippingInfo(this.state.shippingMethod);
         event.preventDefault();
@@ -113,10 +109,7 @@ class CheckoutDetails extends Component {
                     <label>
                         Country<br />
                         <select value={this.state.country} onChange={(event) => this.handleChange('country', event)} >
-                            {/* <option value="United States">United States</option> */}
                             <option value="India">India</option>
-                            {/* <option value="Uk">UK</option> */}
-                            {/* <option value="New Zeland">New Zeland</option> */}
                         </select>
                     </label><br />
                     <label> First Name <br /><input type="text" value={this.state.firstName} onChange={(event) => this.handleChange('fName', event)} /></label><br />
