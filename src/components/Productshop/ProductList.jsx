@@ -33,11 +33,15 @@ const ProductList = ()=>{
         }, []);
 
         const Loading = () => {
-                return 
-                (
+                return (
                         <>
+
                          <Loader/>
+                        
+                     
                         </>
+
+
                 )
         }
 
@@ -98,7 +102,8 @@ const ProductList = ()=>{
         return (
 
                 <div className="product-list">
-                    <div className="aem-Grid">             
+                    <div className="aem-Grid">
+               
                       <div className="aem-Grid aem-Grid--12">
                              
                              { loading ? <Loading /> : <ShowProductList /> }

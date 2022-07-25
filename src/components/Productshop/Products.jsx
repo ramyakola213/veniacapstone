@@ -5,8 +5,7 @@ import ProductList from "../Productshop/ProductList";
 
 
 const Products = ()=>{
-        return 
-       (
+        return (
 
               <>
                 <div className="aem-Grid aem-Grid--3  banner">
