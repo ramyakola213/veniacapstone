@@ -8,38 +8,6 @@ import ProductDetails from "../../components/Productshop/ProductDetails";
 
 const Filter = (props)=>{
 
-        // const [data, setData] = useState([]);
-        // const [filter, setFilter] = useState(data);
-       
-        // let componentMounted = true;
-
-        // useEffect(() => {
-
-        //         const getProducts = async () => {
-                       
-        //                 const response = await fetch("https://fakestoreapi.com/products");
-        //                 if (componentMounted) {
-        //                         setData(await response.clone().json());
-        //                         setFilter(await response.json());
-                               
-        //                         // console.log(filter);
-
-
-        //                 }
-        //                 return () => {
-        //                         componentMounted = false;
-        //                 }
-        //         }
-
-        //         getProducts();
-
-        // }, []);
-
-        // const filterProduct =(cat)=>{
-        //         const updatedList = data.filter((x)=>x.category == cat);
-        //         setFilter(updatedList);
-
-        // }
 
         return(
 

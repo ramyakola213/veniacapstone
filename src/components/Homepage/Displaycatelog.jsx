@@ -6,6 +6,8 @@ const Displayproducts = () =>{
   
         return(
 	<section className="catelog_wrapper">
+	    <div class="aem-GridColumn aem-GridColumn--12">
+
 		<div className="catalogs">
 			<div class="aem-GridColumn aem-GridColumn--phone--12  aem-GridColumn--default--3">
 				<div class="catalog-list">
@@ -46,6 +48,7 @@ const Displayproducts = () =>{
 					</div>
 				</div>
 			</div>
+		</div>
 		</div>
 	</section>
              

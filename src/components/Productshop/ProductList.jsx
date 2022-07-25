@@ -49,13 +49,12 @@ const ProductList = ()=>{
 
         }
 
-        const ShowProductList = () => {
+        const ShowProductList = (product) => {
                 return (
                         <>
-                                 <div className="aem-Grid aem-Grid--12">
-                                       
+                                 <div className="aem-Grid aem-Grid--12">  
                                        <div  className="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12">
-                                             <p> Clothing / Women / Outwear</p>
+                                         <p> Clothing / Women's / Outwear</p>
                                        </div>
                                        <div  className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12">
                                              <p><b>25 Results</b></p>
@@ -70,54 +69,27 @@ const ProductList = ()=>{
                                        </div>
                                        
                                    </div>
-                   <div className="aem-Grid aem-Grid--12">           
-                       {/* <div className="aem-GridColumn aem-GridColumn--default--3">  
-                         <div className="sidebar">
-                             Filters
-                             <hr></hr>  
-                             Categories        
-                         <ul data-accordion className="categories cat"> 
-                          <li  onClick={()=>filterProduct("women's clothing")}><input type="checkbox"  /> Women's Collection </li>
-                          <li  onClick={()=> filterProduct("men's clothing")}><input type="checkbox"  /> Men's collection </li>
-                          <li  onClick={()=>filterProduct("jewelery")} ><input type="checkbox" /> Jewelery</li>
-                          <li  onClick={()=>filterProduct("electronics")}><input type="checkbox" /> Electronics</li>
-                         </ul>
-                         <hr></hr>
-                        
-
-                
-                        </div>  */}
-                        <Filter filterProduct={filterProduct}/>
-
-                        
-
-                        <div className="aem-GridColumn aem-GridColumn--default--9">
-                        <div className="aem-Grid aem-Grid--12">  
-
-                                {filter.map((product) => {
-                                                return (
-                                                        <>       
-                                                          
-                                                               <div className="product-card aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--6" >
+                                    <div className="aem-Grid aem-Grid--12">           
+                                          <Filter filterProduct={filterProduct}/>
+                                             <div className="aem-GridColumn aem-GridColumn--default--9">
+                                                 <div className="aem-Grid aem-Grid--12">  
+                                                    {filter.map((product) => {
+                                                      return (                                                         
+                                                          <div className="product-card aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--6" >
                                                                <NavLink to={`/products/${product.id}`}> 
                                                                         <div className="card-img">
                                                                             <img src={product.image} className="card-img-top" alt={product.title} />
-                                                                        </div> 
-                                                                                
-                                                                          <h5 className="product-card_product--title">{product.title.substring(0,18) }</h5>
+                                                                        </div>                                                                                 
+                                                                            <h5 className="product-card_product--title">{product.title.substring(0,10) }</h5>
                                                                             <h6 className=" "> ${product.price}</h6>
-                                                                          <img src={heart} className="heart" alt="heart"/>
-                                                                                      
-                                                                                
+                                                                            <img src={heart} className="heart" alt="heart"/>                                                                                                                                                               
                                                                 </NavLink>       
-                                                                </div>
-                                                                
-                                                        </>
-                                                )
-                                        })
-                                }
-                                </div>
-                                </div>
+                                                            </div>                                                                                                    
+                                                          )
+                                                         }                                                       )
+                                                    }
+                                                </div>
+                                        </div>
                                 </div>
                         </>
 
