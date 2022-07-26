@@ -163,7 +163,7 @@ class CheckoutDetails extends Component {
     }
 
     displayShippingMethod = () => {
-        debugger
+        
         return (
             <div className="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12" style={{ borderStyle: "groove" }}>
                 <span>Shopping Method</span>
@@ -181,7 +181,7 @@ class CheckoutDetails extends Component {
     }
     render() {
 if(this.props.contactInformation) {
-    debugger
+    
 }
         return (
 

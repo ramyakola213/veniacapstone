@@ -21,7 +21,7 @@ const ProductDetails = () => {
 
         const dispatch = useDispatch();
 
-
+        
         let componentMounted = true;
 
         useEffect(() => {
