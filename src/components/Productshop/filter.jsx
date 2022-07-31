@@ -1,8 +1,8 @@
 
 import React, { useState, useEffect } from "react";
 import "react-loading-skeleton/dist/skeleton.css";
-import { NavLink } from "react-router-dom";
-import ProductDetails from "../../components/Productshop/ProductDetails";
+
+
 
 
 
@@ -11,8 +11,6 @@ const Filter = (props) => {
         const list = ["women's clothing", "men's clothing", "jewelery", "electronics"]
 
         return (
-
-
                 <div className="aem-GridColumn aem-GridColumn--default--3">
                         <div className="sidebar">
                                 Filters

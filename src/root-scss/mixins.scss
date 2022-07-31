@@ -1,27 +1,27 @@
-     @mixin display {
-        display: inline;
-        font-family: $venia-font-family-muli;
-        font-style: $venia-font-style-normal;
-        font-size: $venia-font-size-16;
-        font-family: $venia-font-family-muli;
-      }
-      
-      @mixin text-right {
-        text-align: right;
-        padding: 0 10px;
-      }
-      
-      @mixin buttons {
-        width: 60px;
-        height: 30px;
-        border-radius: 6px;
-        margin: 5px;
-      }
-      
-      @mixin line {
-        height: 8px;
-        margin-left: 45px;
-        background-color: $primary-brand;
-        border: 2px solid $primary-brand;
-        border-radius: 4px;
-       }
+@mixin display {
+  display: inline;
+  font-family: $venia-font-family-muli;
+  font-style: $venia-font-style-normal;
+  font-size: $venia-font-size-16;
+  font-family: $venia-font-family-muli;
+}
+
+@mixin text-right {
+  text-align: right;
+  padding: 0 10px;
+}
+
+@mixin buttons {
+  width: 60px;
+  height: 30px;
+  border-radius: 6px;
+  margin: 5px;
+}
+
+@mixin line {
+  height: 8px;
+  margin-left: 45px;
+  background-color: $primary-brand;
+  border: 2px solid $primary-brand;
+  border-radius: 4px;
+}

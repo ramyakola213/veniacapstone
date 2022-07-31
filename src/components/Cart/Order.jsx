@@ -2,8 +2,18 @@ import React from "react";
 import order from "../../assets/order.PNG";
 import GuestContactInformation from './contactInformation';
 
+import {useSelector} from 'react-redux'
 
 const Order = () => {
+        const conInfo = useSelector(state => state.contactInfo.contactDetails);
+        console.log('contact information', conInfo)
+        const cartDetails = useSelector(state => state.handleCart);
+        console.log('cart Details', cartDetails)
+        const shippingInfo = useSelector(state => state.shipping);
+        console.log('shipping Info', shippingInfo)
+        const paymentInfo = useSelector(state => state.payment);
+        console.log('payment Info', paymentInfo)
+
         return (
                 <section className="container ">
                         <div className="checkout_wrapper">
@@ -16,8 +26,8 @@ const Order = () => {
                                         <div className="aem-Grid aem-Grid--12 ">
                                                 <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12">
                                                         <h5>Shipping Information</h5>
-                                                        <p>q_farhan@gmail.com ,<br />
-                                                                +1 (555) 229-3367</p>
+                                                        <p>{conInfo.email} ,<br />
+                                                                {conInfo.phoneNumber}</p>
                                                 </div>
                                                 <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12">
                                                         <h5>Shipping Method</h5>
@@ -26,10 +36,10 @@ const Order = () => {
                                                         <p>FREE</p>
                                                 </div>
                                                 <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12">
-                                                        <p>Qadim Farhan</p>
-                                                        <p> 1098 Wapello Street </p>
-                                                        <p> Altadena,California 91001 </p>
-                                                        <p>United States</p>
+                                                        <p>{conInfo.firstName + " " + conInfo.lastName}</p>
+                                                        <p> {conInfo.add1 + "," + conInfo.add2} </p>
+                                                        <p> {conInfo.city + "," + conInfo.state + "," + conInfo.zipCode} </p>
+                                                        <p>{conInfo.country}</p>
                                                 </div>
                                                 <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12 mt-10">
                                                         <h5>Payment Method</h5>

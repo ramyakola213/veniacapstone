@@ -71,13 +71,13 @@ class GuestContactInformation extends Component {
         }
     }
     handleSubmit(event) {
+        event.preventDefault();
         this.setState({ submitted: true });
         let contactSubmitted = {
             ...this.state,
             submitted: true
         }
         this.props.saveContactInfo(contactSubmitted);
-        event.preventDefault();
     }
 
     updateSubmittedFlag(value) {
@@ -110,6 +110,7 @@ class GuestContactInformation extends Component {
                                         <label>
                                             Country<br />
                                             <select value={this.state.country} onChange={(event) => this.handleChange('country', event)} >
+                                                <option value="">Select Country</option>
                                                 <option value="United States">United States</option> 
                                                 <option value="India">India</option>
                                                 <option value="Uk">UK</option>
@@ -135,17 +136,18 @@ class GuestContactInformation extends Component {
                                     <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12 input_wrap">
                                         <label>City <input type="text" class="input" value={this.state.city} onChange={(event) => this.handleChange('city', event)} /></label> 
                                     </div>
-                                    <div className="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12 input_wrap">
+                                    {this.state.country && <div className="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12 input_wrap">
                                         <label>
                                             State 
                                             <select value={this.state.stateVal} onChange={(event) => this.handleChange('state', event)} >
+                                                <option value="">Select State</option>
                                                 <option value="AndhraPradesh">AndhraPradesh</option>
                                                 <option value="Telengana">Telengana</option>
                                                 <option value="Kerala">Kerala</option>
                                                 <option value="TamilNadu">Tamil Nadu</option>
                                             </select>
                                         </label>
-                                    </div>
+                                    </div>}
                                     <div className="aem-GridColumn aem-GridColumn--default--2 aem-GridColumn--phone--12 input_wrap">
                                         <label>ZipCode  <input type="number" class="input" value={this.state.zipCode} onChange={(event) => this.handleChange('zip', event)} /></label>
                                     </div>
@@ -176,7 +178,7 @@ class GuestContactInformation extends Component {
                  </div>
                  <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12">
 
-                    <p>{this.props.contactInformation.contactDetails.firstName + this.props.contactInformation.contactDetails.lastName}<br/>
+                    <p>{this.props.contactInformation.contactDetails.firstName + " " + this.props.contactInformation.contactDetails.lastName}<br/>
                      {this.props.contactInformation.contactDetails.add1}</p> 
                      <p> {  this.props.contactInformation.contactDetails.add2}</p>
                      <p> {  this.props.contactInformation.contactDetails.zipCode}</p>
@@ -198,7 +200,7 @@ class GuestContactInformation extends Component {
     }
 }
 const mapStateToProps = (state) => ({
-    contactInformation: state.handleCart
+    contactInformation: state.contactInfo
 })
 const mapDispatchToProps = {
     saveContactInfo

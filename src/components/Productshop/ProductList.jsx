@@ -72,7 +72,9 @@ const ProductList = () => {
                                                         <option value="Latest"  > <li onClick={() => filterProduct("women's clothing")}>Latest</li></option>
                                                         <option value="old"  ><li onClick={() => filterProduct("men's clothing")}> New</li></option>
                                                         <option value="old" onClick={() => filterProduct("jewelery")}> Old</option>
+
                                                 </select>
+
                                         </div>
 
                                 </div>

@@ -36,15 +36,19 @@ class CheckoutDetails extends Component {
                         <PricingSummary />
                     </div>
                 </div>
-                <div className="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--phone--12  button_wrap">
+                {this.props.contactInformation && this.props.contactInformation.submitted === true 
+                    && this.props.shippinginfo && this.props.shippinginfo.shippingMethodSubmitted === true 
+                    && this.props.paymentInfo && this.props.paymentInfo.submittedCardDetails === true &&<div className="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--phone--12  button_wrap">
                    <NavLink to="/Order"> <button type="submit"  className="primary_button" value="CONTINUE" >PLACE ORDER</button></NavLink>
-                </div>
+                </div>}
             </section>
         );
     }
 }
 const mapStateToProps = (state) => ({
-    // contactInformation: state.handleCart
+    contactInformation: state.contactInfo.contactDetails,
+    shippinginfo: state.shipping.shippingMethodDetails,
+    paymentInfo: state.payment.paymentDetails
 })
 const mapDispatchToProps = {
     // saveContactInfo,

@@ -36,10 +36,6 @@ export const handleCart = (state = cart, action) => {
                                 );
                         }
                         break;
-                case "SAVE-CONTACT":
-                        return {
-                                contactDetails: product
-                        }
                 default:
                         return state;
                         break;

@@ -11,9 +11,9 @@ const Header = () => {
    return (
 
 
-      <header class="venia--header">
+      <header className="venia--header">
          <div className="aem-Grid"> 
-            <i className="fas fa-bars dropdown">
+            <i className="fas fa-bars venia--header__dropdown">
                <h1 className=""> <NavLink to="veniacapstone">V E N I A </NavLink></h1>
                 <ul>
                 <li> <NavLink to="/cart"  storeData={stateData ? stateData.length > 0 ? stateData : [] : []} ><img src={cart} alt="user" className="icon-img" /> <h5 class="cart_items_number">{stateData ? stateData.length > 0 ? stateData.length : '0' : ''} </h5></NavLink></li>
@@ -21,8 +21,8 @@ const Header = () => {
             </i> 
          </div>
 
-         <nav>
-         <NavLink to="/veniacapstone"> <h4 className="logo">V E N I A</h4></NavLink>
+         <nav className="venia--header__nav">
+         <NavLink to="/veniacapstone"> <h4 className="venia--header__logo">V E N I A</h4></NavLink>
             <ul>
                <li><NavLink to="/products" > Products </NavLink></li>
                <li><NavLink to="/products" > Women </NavLink></li>

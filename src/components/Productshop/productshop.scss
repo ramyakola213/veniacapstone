@@ -2,11 +2,14 @@
 @import "../../root-scss/root.scss";
 @import "../Cart/scss/checkout.scss";
 @import "../../root-scss/mixins.scss";
+@import "../Header/Header.scss";
+@import "../Footer/Footer.scss";
+
+
 
 * {
   box-sizing: border-box;
 }
-
 
 
 body {
@@ -17,159 +20,18 @@ body {
 
 }
 
-.button_wrap{
-  display: flex;
-  justify-content: center;
-  margin: 15px 0;
-
-.primary_button{
-  font-weight: 500;
-  background: #2A65D7;
-  border: 2px solid #2A65D7 ;
-  border-radius: 10px;
-  color:  $white;
-  opacity: 1;
-  padding: 6px 50px;
-  margin: 20px 0 30px 0;
-  cursor: pointer;
-}
-.secondary_button{
-  font-weight: 500;
-  background: $white;
-  border: 2px solid #2A65D7;
-  border-radius: 10px;
-  color:  #2A65D7;
-  opacity: 1;
-  padding: 6px 25px;
-  margin: 20px 0 30px 0;
-  cursor: pointer;
 
 
-  
-}
-.content-btn{
-  background: transparent;
-  border: 2px solid $white;
-  color:$white;
-}
 
-}
 
 
 //  HEADER STYLES STARTS HERE
 
-.venia--header {
-  background: $primary-brand;
-  padding: 20px 30px;
-  width: 100%;
-  color: $white;
-  top: 0;
-  z-index: 1;
-  border: 1px solid $gray-l2;
 
 
 
-  .dropdown {
-    font-size: 26px;
-    padding: 10px;
-    color: $white;
-
-    .logo-mobile {
-      float: right;
-      color: $white;
-    }
 
 
-    i {
-      float: right;
-      font-size: 1.9rem;
-      padding: .25rem .5rem;
-      color: $white;
-    }
-
-    h1 {
-      @include display;
-      font-size: $venia-font-size-24;
-      margin-left: 55px;
-      color: $white;
-      a{
-        color: $white;
-      }
-    }
-
-    ul {
-      @include display;
-      float: right;
-      margin: 6px 10px 0 0;
-
-      li {
-        @include display;
-        color: $white;
-      }
-    }
-
-    &:hover {
-      .dropdown-content {
-        display: block;
-      }
-    }
-
-    .fas {
-      float: left;
-    }
-
-  }
-
-
-
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    right: 1px;
-    background-color: $white;
-    color: $venia-color-172026;
-    min-width: 100%;
-    top: 0;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-
-    a {
-      color: $white;
-      padding: 12px 16px;
-      text-decoration: none;
-      display: block;
-      font-size: 1.5rem;
-
-      &:hover {
-        background-color: #f1f1f1;
-        color: black;
-      }
-    }
-
-    .sidebar {
-      padding: 30px;
-    }
-  }
-
-
-}
-
-h1,
-h2,
-h3 {
-  padding: 0;
-  margin: 0;
-
-}
-
-
-
-h4,
-h5,
-h6 {
-  padding: 2px 0;
-  margin: 2px 0;
-}
 
 // HEADER ENDS
 
@@ -556,42 +418,44 @@ nav,
   cursor: pointer;
 }
 
-footer {
 
-  font-size: 12px;
-  border: 1px solid $gray-l2;
 
-  .footer-one {
-    padding: 20px;
-  }
+.button_wrap{
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
 
-  .footer-two {
-    // margin: 20px 0;
-    padding: 15px 30px;
-    border-top: 1px solid $gray-l2;
-    display: flex;
-    flex-direction: column-reverse;
-    text-align: center;
+.primary_button{
+  font-weight: 500;
+  background: #2A65D7;
+  border: 2px solid #2A65D7 ;
+  border-radius: 10px;
+  color:  $white;
+  opacity: 1;
+  padding: 6px 50px;
+  margin: 20px 0 30px 0;
+  cursor: pointer;
+}
+.secondary_button{
+  font-weight: 500;
+  background: $white;
+  border: 2px solid #2A65D7;
+  border-radius: 10px;
+  color:  #2A65D7;
+  opacity: 1;
+  padding: 6px 25px;
+  margin: 20px 0 30px 0;
+  cursor: pointer;
 
-    .terms-policy {
-      margin-bottom: 10px;
 
-      a {
-        padding-left: 10px;
-        text-decoration: underline;
-      }
-    }
+  
+}
+.content-btn{
+  background: transparent;
+  border: 2px solid $white;
+  color:$white;
+}
 
-    h3 {
-      display: none;
-    }
-
-    .icon-img {
-      width: 25px;
-      padding: 0 2px;
-      margin-right: 10px;
-    }
-  }
 }
 
 
@@ -817,32 +681,7 @@ footer {
   }
 
 
-//Footer
 
-  footer {
-    .footer-two {
-      margin-top: 30px;
-      padding: 20px 150px;
-
-      display: block;
-      flex-direction: none;
-
-      .terms-policy {
-        text-align: right;
-
-        a {
-          padding-left: 10px;
-          text-decoration: underline;
-        }
-      }
-
-      h3 {
-        float: left;
-        display: block;
-      }
-    }
-
-  }
 
   .icon-img {
     width: 20px;

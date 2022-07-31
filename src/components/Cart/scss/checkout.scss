@@ -1,120 +1,104 @@
 @import "/src/root-scss/aem-grid.scss";
 @import "/src/root-scss/root.scss";
 
+.checkout_wrapper {
+  margin: 20px 16px;
 
-.checkout_wrapper{
-  margin:20px 16px;
-  
-
-  &__h1-heading{
-        
-        text-align: center;
-        color: $white;
-        hr{
-            height: 6px;
-            margin: 2% 40%;
-            background-color: $primary-brand;
-            border: 2px solid $primary-brand;
-            
-      }
+  &__h1-heading {
+    text-align: center;
+    color: $white;
+    hr {
+      height: 6px;
+      margin: 2% 40%;
+      background-color: $primary-brand;
+      border: 2px solid $primary-brand;
+    }
   }
 
+  &__h2-heading {
+    margin: 10px 0;
+  }
+  p {
+    font-size: $venia-font-size-14;
+    display: block;
+    cursor: pointer;
+  }
+  .input,
+  select {
+    background: $white 0% 0% no-repeat padding-box;
+    border: 2px solid $gray-l2;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 2px solid #b5b7bc;
+    border-radius: 8px;
+    opacity: 1;
+    height: 30px;
+    width: 100%;
+    margin: 10px 0;
+  }
+  .input_wrap {
+    padding-right: 20px;
+  }
+  .space-wrap {
+    padding: 6px 0;
+  }
+  &__button_wrap {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
 
-  &__h2-heading{
-        margin: 10px 0;
-  }
-  p{
-      font-size: $venia-font-size-14;
-      display: block;
-      cursor: pointer;
-  }
-  .input,select{
-        background: $white 0% 0% no-repeat padding-box;
-        border: 2px solid $gray-l2;
-        background: #FFFFFF 0% 0% no-repeat padding-box;
-        border: 2px solid #B5B7BC;
-        border-radius: 8px;
-        opacity: 1;
-        height:30px;
-        width:100%;
-        margin: 10px 0;
-        
-  }
-  .input_wrap{
-        padding-right:20px;
-  }
-  .space-wrap{
-      padding: 6px 0;
-  }
-  &__button_wrap{
-      display: flex;
-      justify-content: center;
-      margin: 15px 0;
-  
-  .secondary_button{
+    .secondary_button {
       font-weight: 500;
       background: $white;
-      border: 2px solid #2A65D7;
+      border: 2px solid #2a65d7;
       border-radius: 10px;
-      color:  #2A65D7;
+      color: #2a65d7;
       opacity: 1;
       padding: 6px 50px;
       margin: 20px 0 30px 0;
-      
+    }
   }
-  
- }
 
- &__payment_wrapper{
-      margin-bottom:30px;
-      .input{
-            display: block;
-            
+  &__payment_wrapper {
+    margin-bottom: 30px;
+    .input {
+      display: block;
 
-       @media screen and (min-width:760px) {
-            width:50%;
-            
-       }     
+      @media screen and (min-width: 760px) {
+        width: 50%;
       }
-      .input-expiry{
-            padding-right:10px;
-            @media screen and (min-width:760px) {
-                  width:100%;
-                  
-             } 
-
+    }
+    .input-expiry {
+      padding-right: 10px;
+      @media screen and (min-width: 760px) {
+        width: 100%;
       }
- }
- &__pricing_wrapper{
-      border: 1px solid #D1D3D6;
-      padding:20px;  
-      position: sticky;   
-      top: 0; 
-      span{
-            float: right;
-      }
-
- 
- }
- &__edit_wrapper{
-
-      padding:20px;
-      border: 1px solid #D1D3D6;
-      margin: 10px 0;
-      p{
-            margin: 0px;
-            
-      }
-      span{
-          float:right;
-          margin-top: -22px;
-          color:#2A65D7;
-      }
- }
- .order-info{
-      p{
-            margin: 0;
-      }
- }
- 
+    }
+  }
+  &__pricing_wrapper {
+    border: 1px solid #d1d3d6;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    span {
+      float: right;
+    }
+  }
+  &__edit_wrapper {
+    padding: 20px;
+    border: 1px solid #d1d3d6;
+    margin: 10px 0;
+    p {
+      margin: 0px;
+    }
+    span {
+      float: right;
+      margin-top: -22px;
+      color: #2a65d7;
+    }
+  }
+  .order-info {
+    p {
+      margin: 0;
+    }
+  }
 }

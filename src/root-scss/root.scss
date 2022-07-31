@@ -1,30 +1,37 @@
-
 /* Colors: */
-$primary-d1: #172BC4;
-$primary-m1: #336DFF;
-$primary-brand: #1F39FF;
-$primary-l1: #3D84FF;
-$gray-d2: #181C24;
+$primary-d1: #172bc4;
+$primary-m1: #336dff;
+$primary-brand: #1f39ff;
+$primary-l1: #3d84ff;
+$gray-d2: #181c24;
 $gray-d1: #535965;
-$gray-m1: #91959C;
-$gray-l2: #B5B7BC;
-$gray-l1: #E5E5E7;
-$white: #FFFFFF;
-$positive-2: #12805C;
-$positive-1: #268E6C;
-$negative-2: #C9252D;
-$negative-1: #D7373F;
+$gray-m1: #91959c;
+$gray-l2: #b5b7bc;
+$gray-l1: #e5e5e7;
+$white: #ffffff;
+$positive-2: #12805c;
+$positive-1: #268e6c;
+$negative-2: #c9252d;
+$negative-1: #d7373f;
 $venia-color-172026: #172026;
-$color-1:#F9009A;
-$color-2: #6408D3;
-$color-3: #EBC250;
-$color-4:#AF52FF ;
-$color-5: #EB7327;
-$color-6: #FDBA5E;
-$color-7:#0073788C;
-$color-grad:linear-gradient(rgb(175, 82, 255) 0%, rgb(121, 80, 232) 16%, rgb(79, 90, 218) 29%, rgb(87, 203, 118) 43%, rgb(235, 194, 80) 56%, rgb(255, 136, 16) 69%, rgb(227, 47, 15) 83%, rgb(191, 25, 25) 100%) transparent;;
-
-
+$color-1: #f9009a;
+$color-2: #6408d3;
+$color-3: #ebc250;
+$color-4: #af52ff;
+$color-5: #eb7327;
+$color-6: #fdba5e;
+$color-7: #0073788c;
+$color-grad: linear-gradient(
+    rgb(175, 82, 255) 0%,
+    rgb(121, 80, 232) 16%,
+    rgb(79, 90, 218) 29%,
+    rgb(87, 203, 118) 43%,
+    rgb(235, 194, 80) 56%,
+    rgb(255, 136, 16) 69%,
+    rgb(227, 47, 15) 83%,
+    rgb(191, 25, 25) 100%
+  )
+  transparent;
 
 /* Font/text values */
 $venia-font-family-muli: Muli;
@@ -52,124 +59,117 @@ $venia-line-spacing-45: 45px;
 $venia-line-spacing-60: 60px;
 $venia-line-spacing-17-5: 17.5px;
 
-
 /* Character Styles */
 
 @mixin heading-font {
-        font-family: $venia-font-family-muli;
-        font-style: $venia-font-style-normal;
-        font-weight: $venia-font-weight-600; 
-        letter-spacing: $venia-character-spacing-0;
-        color: $venia-color-172026;  
+  font-family: $venia-font-family-muli;
+  font-style: $venia-font-style-normal;
+  font-weight: $venia-font-weight-600;
+  letter-spacing: $venia-character-spacing-0;
+  color: $venia-color-172026;
 }
-
 
 .display-xl-48-dekstop-only {
-@include heading-font;
-font-size: $venia-font-size-48;
-line-height: $venia-line-spacing-60;
-
+  @include heading-font;
+  font-size: $venia-font-size-48;
+  line-height: $venia-line-spacing-60;
 }
 .display-l-36- {
-@include heading-font;
-font-size: $venia-font-size-36;
-line-height: $venia-line-spacing-45;
-
-
+  @include heading-font;
+  font-size: $venia-font-size-36;
+  line-height: $venia-line-spacing-45;
 }
 .display-m-30- {
-@include heading-font;
-font-size: $venia-font-size-30;
-line-height: $venia-line-spacing-30;
-font-family:$venia-font-family-source-serif-pro;
-
+  @include heading-font;
+  font-size: $venia-font-size-30;
+  line-height: $venia-line-spacing-30;
+  font-family: $venia-font-family-source-serif-pro;
 }
 .display-m-24- {
- @include heading-font;
- font-size: $venia-font-size-24;
- line-height: $venia-line-spacing-30;
- font-family:$venia-font-family-source-serif-pro;
-        
- }
+  @include heading-font;
+  font-size: $venia-font-size-24;
+  line-height: $venia-line-spacing-30;
+  font-family: $venia-font-family-source-serif-pro;
+}
 .display-s-20- {
-@include heading-font;
-font-size: $venia-font-size-20;
-line-height: $venia-line-spacing-25;
-font-family:$venia-font-family-source-serif-pro;
-
+  @include heading-font;
+  font-size: $venia-font-size-20;
+  line-height: $venia-line-spacing-25;
+  font-family: $venia-font-family-source-serif-pro;
 }
 .regular-heading-xl-24- {
   @include heading-font;
-font-size: $venia-font-size-24;
-line-height: $venia-line-spacing-30;
-
+  font-size: $venia-font-size-24;
+  line-height: $venia-line-spacing-30;
 }
 .regular-heading-l-20- {
-        @include heading-font;
-font-size: $venia-font-size-20;
-line-height: $venia-line-spacing-25;
-
+  @include heading-font;
+  font-size: $venia-font-size-20;
+  line-height: $venia-line-spacing-25;
 }
 .regular-heading-m-16- {
-@include heading-font;
-font-weight: $venia-font-weight-bold;
-font-size: $venia-font-size-16;
-line-height: $venia-line-spacing-20;
-
+  @include heading-font;
+  font-weight: $venia-font-weight-bold;
+  font-size: $venia-font-size-16;
+  line-height: $venia-line-spacing-20;
 }
 .regular-heading-s-14- {
- @include heading-font;
-font-weight: $venia-font-weight-bold;
-font-size: $venia-font-size-14;
-line-height: $venia-line-spacing-17-5;
-
+  @include heading-font;
+  font-weight: $venia-font-weight-bold;
+  font-size: $venia-font-size-14;
+  line-height: $venia-line-spacing-17-5;
 }
 .regular-body-l-20- {
-
-font-size: $venia-font-size-20;
-line-height: $venia-line-spacing-30;
-@include heading-font;
+  font-size: $venia-font-size-20;
+  line-height: $venia-line-spacing-30;
+  @include heading-font;
 }
 .regualr-body-m-16- {
- @include heading-font;
-font-size: $venia-font-size-16;
-line-height: $venia-line-spacing-24;
-
+  @include heading-font;
+  font-size: $venia-font-size-16;
+  line-height: $venia-line-spacing-24;
 }
 .regular-body-s-14- {
-         @include heading-font;
-font-size: $venia-font-size-14;
-line-height: $venia-line-spacing-21;
-
+  @include heading-font;
+  font-size: $venia-font-size-14;
+  line-height: $venia-line-spacing-21;
 }
 .blockquote {
-font-family: $venia-font-family-muli;
-font-style: $venia-font-style-italic;
-font-weight: $venia-font-weight-normal;
-font-size: $venia-font-size-20;
-line-height: $venia-line-spacing-30;
-letter-spacing: $venia-character-spacing-0;
-color: $gray-d2;
+  font-family: $venia-font-family-muli;
+  font-style: $venia-font-style-italic;
+  font-weight: $venia-font-weight-normal;
+  font-size: $venia-font-size-20;
+  line-height: $venia-line-spacing-30;
+  letter-spacing: $venia-character-spacing-0;
+  color: $gray-d2;
 }
 .numbered-list {
-@include heading-font;
-font-size: $venia-font-size-16;
-line-height: $venia-line-spacing-32;
+  @include heading-font;
+  font-size: $venia-font-size-16;
+  line-height: $venia-line-spacing-32;
 
-color: $gray-d2;
+  color: $gray-d2;
 }
-.mr-10{
-        margin-right:10px
-    }
-.mr-20{
-        margin-right:20px
-    }
-.mt-10{
-        margin-top:10px
+h1,h2,h3 {
+        padding: 0;
+        margin: 0;
+      }
+h4,h5,h6 {
+padding: 2px 0;
+margin: 2px 0;
 }
-.pl-10{
-        padding-left:10px;
+.mr-10 {
+  margin-right: 10px;
 }
-.pr-10{
-        margin-right:10px
+.mr-20 {
+  margin-right: 20px;
+}
+.mt-10 {
+  margin-top: 10px;
+}
+.pl-10 {
+  padding-left: 10px;
+}
+.pr-10 {
+  margin-right: 10px;
 }

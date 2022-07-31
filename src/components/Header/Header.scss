@@ -1,0 +1,56 @@
+@import "../../root-scss/aem-grid.scss";
+@import "../../root-scss/root.scss";
+
+.venia--header {
+  background: $primary-brand;
+  padding: 20px 30px;
+  width: 100%;
+  color: $white;
+  top: 0;
+  z-index: 1;
+  border: 1px solid $gray-l2;
+
+  &__dropdown {
+    font-size: 26px;
+    padding: 10px;
+    color: $white;
+
+    i {
+      float: right;
+      font-size: 1.9rem;
+      padding: 0.25rem 0.5rem;
+      color: $white;
+    }
+
+    h1 {
+      @include display;
+      font-size: $venia-font-size-24;
+      margin-left: 55px;
+      color: $white;
+      a {
+        color: $white;
+      }
+    }
+
+    ul {
+      @include display;
+      float: right;
+      margin: 6px 10px 0 0;
+
+      li {
+        @include display;
+        color: $white;
+      }
+    }
+
+    &:hover {
+      .dropdown-content {
+        display: block;
+      }
+    }
+
+    .fas {
+      float: left;
+    }
+  }
+}

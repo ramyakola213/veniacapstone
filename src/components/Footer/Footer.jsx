@@ -8,8 +8,8 @@ import insta from "../../assets/instagram.svg";
 const Footer = ()=>{
         return (
 
-            <footer>
-                 <div className="container footer-one">
+            <footer class="footer--main">
+                 <div className="container footer--one">
                    <div className="aem-Grid aem-Grid--12 ">
                     <div className="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12">
                      <ul>
@@ -45,10 +45,10 @@ const Footer = ()=>{
                     </div>
                   </div>
                  </div>
-                 <div className="aem-Grid aem-Grid--12 footer-two">
+                 <div className="aem-Grid aem-Grid--12 footer--two">
                      <div className="aem-GridColumn aem-GridColumn--default--4  aem-GridColumn--phone--12"> <h3>V E N I A </h3></div>
                       <div className="aem-GridColumn aem-GridColumn--default--4  aem-GridColumn--phone--12"> © Company Name Address Ave, City Name, State ZIP</div>
-                    <div className="aem-GridColumn aem-GridColumn--default--4  terms-policy aem-GridColumn--phone--12"> <a> Terms of Use </a><a> Privacy Policy</a></div>               
+                    <div className="aem-GridColumn aem-GridColumn--default--4  footer--terms-policy aem-GridColumn--phone--12"> <a> Terms of Use </a><a> Privacy Policy</a></div>               
                 </div>
                 
 
