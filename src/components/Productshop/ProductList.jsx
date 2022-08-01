@@ -3,7 +3,6 @@ import React, { useState, useEffect } from "react";
 import heart from '../../assets/heart.svg';
 import "react-loading-skeleton/dist/skeleton.css";
 import { NavLink } from "react-router-dom";
-import ProductDetails from "../Productshop/ProductDetails";
 import Filter from "./filter";
 import Loader from './loader';
 
@@ -69,12 +68,10 @@ const ProductList = () => {
 
                                         <div className="aem-GridColumn aem-GridColumn--default--3 filter-input">
                                                 <select className="sort">
-                                                        <option value="Latest"  > <li onClick={() => filterProduct("women's clothing")}>Latest</li></option>
-                                                        <option value="old"  ><li onClick={() => filterProduct("men's clothing")}> New</li></option>
-                                                        <option value="old" onClick={() => filterProduct("jewelery")}> Old</option>
-
+                                                        <option value="Latest"  > <li onClick={() => filterProduct("women's clothing")}>Sort by Latest</li></option>
+                                                        <option value="old" onClick={() => filterProduct("jewelery")}>Sort by  Old</option>
+                                                        <option value="old"  ><li onClick={() => filterProduct("men's clothing")}>Sort by Low Price</li></option>
                                                 </select>
-
                                         </div>
 
                                 </div>

@@ -91,7 +91,7 @@ class PaymentInfo extends Component {
                                         <label>CVV <input type="number" class="input" value={this.state.cvv} onChange={(event) => this.handleChange('cvv', event)} /> </label> 
                                     </div>
                                     </div>
-                                    <div className="aem-Grid aem-Grid--12 checkout_wrapper__button_wrap ">
+                                    <div className="aem-Grid aem-Grid--12 button_wrap ">
                                                 <button type="submit"  className="secondary_button" value="CONTINUE" >CONTINUE TO REVIEW ORDER</button>
                                     </div>
                         </AccordionItemPanel>

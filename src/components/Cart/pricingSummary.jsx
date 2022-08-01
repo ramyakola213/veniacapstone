@@ -21,10 +21,13 @@ const PricingSummary = (props) => {
                 <p>Estimated Shipping   <span>   ${estimatedShipping === '0.00' ? 'FREE' : estimatedShipping}</span></p>
                 <b><p>Estimated Total   <span>${estimatedTotal} </span></p></b>
 
-                <a className="button_wrap">                        
-                        <NavLink to="/Checkout"> <button type="submit"  className="primary_button" value="CONTINUE" >CHECKOUT</button></NavLink>
-                        {/* <img src={paypal}></img> */}
-                </a>
+
+                {/* {this.props.contactInformation && this.props.contactInformation.submitted === true 
+                    && this.props.shippinginfo && this.props.shippinginfo.shippingMethodSubmitted === true 
+                    && this.props.paymentInfo && this.props.paymentInfo.submittedCardDetails === true &&<div className="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--phone--12  button_wrap">
+                   <NavLink to="/Order"> <button type="submit"  className="primary_button" value="CONTINUE" >PLACE ORDER</button></NavLink>
+                </div>} */}
+
                 
            
             </div>

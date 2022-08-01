@@ -64,7 +64,7 @@ class ShoppingMethods extends Component {
                                         <input type="radio" value="nextDay" name="shipping" />  Next Day Delivery (Next business days via FedEx) $53.61
                                     </div>
                                 </div>
-                                <div className="aem-Grid aem-Grid--12 checkout_wrapper__button_wrap ">
+                                <div className="aem-Grid aem-Grid--12 button_wrap ">
                                     <button type="submit"  className="secondary_button" value="CONTINUE" >CONTINUE TO PAYMENT METHOD</button>
                                 </div>   
                             </AccordionItemPanel>

@@ -152,7 +152,7 @@ class GuestContactInformation extends Component {
                                         <label>ZipCode  <input type="number" class="input" value={this.state.zipCode} onChange={(event) => this.handleChange('zip', event)} /></label>
                                     </div>
                                 </div>
-                                <div className="aem-Grid aem-Grid--12 checkout_wrapper__button_wrap ">
+                                <div className="aem-Grid aem-Grid--12 button_wrap ">
                                     <button type="submit" className="secondary_button" value="CONTINUE" >CONTINUE TO SHIPPING METHOD</button>
                                 </div>
                             </AccordionItemPanel>

@@ -22,7 +22,7 @@ const Order = () => {
                             </div>
                              <div className="aem-Grid aem-Grid--12 order-info">
                                    <div className="aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--phone--12 order-info">
-                                        <h4 className=" ">  Order Number 1700834</h4>
+                                        <h4>  Order Number 1700001</h4>
                                         <div className="aem-Grid aem-Grid--12 ">
                                                 <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12">
                                                         <h5>Shipping Information</h5>
@@ -31,9 +31,9 @@ const Order = () => {
                                                 </div>
                                                 <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12">
                                                         <h5>Shipping Method</h5>
-                                                        <p>Standard Shipping</p>
+                                                        <p>{shippingInfo.shippingMethodDetails.shippingval}</p>
                                                         <p> Est. delivery in 4 - 8 business days</p>
-                                                        <p>FREE</p>
+                                                        <p>{shippingInfo.shippingMethodDetails.shippingval}</p>
                                                 </div>
                                                 <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12">
                                                         <p>{conInfo.firstName + " " + conInfo.lastName}</p>
@@ -44,7 +44,7 @@ const Order = () => {
                                                 <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12 mt-10">
                                                         <h5>Payment Method</h5>
                                                         <p>Credit Card </p>
-                                                        <p> Visa ending in 4567</p>
+                                                        <p> Visa ending in {paymentInfo.paymentDetails.creditCardnumber.slice(-4)}</p>
                                                 </div>      
                                         </div>
                                         <div className="aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--phone--12 mt-10">

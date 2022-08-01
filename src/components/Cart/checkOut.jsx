@@ -18,10 +18,11 @@ class CheckoutDetails extends Component {
     render() {
         return (
 
-            <section className="container checkout_wrapper">
+            <section className="container ">
+                <div class="checkout_wrapper">
                 <div className="aem-Grid   aem-GridColumn--phone--12 ">
 
-                    <h1 className="checkout_wrapper__h1-heading display-m-30-">Checkout <hr></hr></h1>
+                    <h1 className="checkout_wrapper__h1-heading display-m-30-">Checkout <hr/></h1>
 
                 </div>
                 <div className="aem-Grid aem-Grid--12 ">
@@ -41,6 +42,7 @@ class CheckoutDetails extends Component {
                     && this.props.paymentInfo && this.props.paymentInfo.submittedCardDetails === true &&<div className="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--phone--12  button_wrap">
                    <NavLink to="/Order"> <button type="submit"  className="primary_button" value="CONTINUE" >PLACE ORDER</button></NavLink>
                 </div>}
+                </div>
             </section>
         );
     }

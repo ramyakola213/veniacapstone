@@ -21,20 +21,6 @@ body {
 }
 
 
-
-
-
-
-//  HEADER STYLES STARTS HERE
-
-
-
-
-
-
-
-// HEADER ENDS
-
 //Banner Starts
 
 .banner {
@@ -68,14 +54,11 @@ body {
 }
 
 
-
-
 hr {
   margin-right: 40px;
   background-color: $gray-l2;
   height: 0.2px;
 }
-
 
 
 input[type="checkbox"] {
@@ -86,15 +69,8 @@ input[type="checkbox"] {
 
 ul {
   list-style: none;
-  margin-left: -40px;
+  padding: 0 5px 0 10px;
   cursor: pointer;
-}
-
-//For LOADING 
-.skeleton-card {
-  margin: 10px;
-  width: 300px;
-  height: 350px;
 }
 
 // PAGE WRAPPERS
@@ -102,9 +78,6 @@ ul {
 .product-list {
   margin: 20px;
 }
-
-
-
 
 .product-card {
 
@@ -183,11 +156,8 @@ ul {
     }
   }
 
-  .size,
-  .categories {
-    margin: 20px 10px;
 
-  }
+ 
 }
 
 
@@ -240,93 +210,20 @@ nav,
       cursor: pointer;
     }
   }
+  &__edit-block{
+    margin-top: 48px;
+  }
 
 }
 .grid-div{
+  
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.colors {
-
-  li {
-    display: inline;
-  }
-
-  button {
-    @include buttons;
-    cursor: pointer;
-
-    &.pink {
-      background: $color-1;
-      border: $color-1 ;
-      outline: 3px solid $color-1 ;
-
-    }
-
-    &.black {
-      background: $venia-color-172026;
-      border: $venia-color-172026;
-      outline: 3px solid $venia-color-172026;
-
-
-    }
-
-    &.green {
-      background: $color-grad;
-      border: $color-4;
-      outline: 3px solid $color-grad;
-
-    }
-
-    &.blue {
-      background: $color-2;
-      border: $color-2 ;
-      outline: 3px solid $color-2 ;
-
-    }
-
-    &.yellow {
-      background: $color-3;
-      border: $color-3;
-      outline: 3px solid $color-3;
-
-    }
-
-    &.white {
-      background: $white;
-      border: 2px solid $gray-m1;
-
-    }
-
-    &.grr {
-      background: $color-7;
-      border: $color-7;
-      outline: 2px solid $color-7;
-
-    }
-
-    &.red {
-      background: $positive-1;
-      border: $positive-1;
-      outline: 2px solid $positive-1;
-
-    }
-  }
-
-  .grad-img {
-    width: 54px;
-    object-fit: cover;
-    height: 30px;
-  }
-
-
-
-}
 
 .size {
-
 
   li {
     display: inline;
@@ -371,26 +268,27 @@ nav,
 .displaycart-wrap{
   display: block;
   border-radius: 2px;
-  width: 100%;
+  width: 90%;
+  margin: 40px 10px 20px 5px;
 
-  .displaycart-wrap__row{
+  &__row{
       display: block;
       width: 100%;
       border: 1px solid #D1D3D6;
       padding: 24px 10px;
-      .displaycart-wrap__toggle {
+      &__toggle {
           cursor: pointer;
       }
-      .displaycart-wrap__left{
+      &__left{
           color: #172026;
           font-size: 20px;
       }
-      .displaycart-wrap__right{
+      &__right{
           color: #172026;
           font-size: 14px;
           margin-left: 10px;
           float: right;
-          .displaycart-wrap__downarrow{
+          &__downarrow{
               
               display: inline;
               width: 13px;
@@ -398,7 +296,7 @@ nav,
               background-size: 100%;
               margin-left: 10px;
           }
-          .displaycart-wrap__uparrow{
+          &__uparrow{
              
               display: inline;
               width: 13px;
@@ -407,7 +305,29 @@ nav,
               margin-left: 10px;
           }
       }
+
   }
+  &__pricing-block{
+    background: $white;
+    box-shadow: 0px 0px 8px #0000000D;
+    border: 1px solid #D1D3D6;
+    border-radius: 2px;
+    padding:24px;
+      span{
+        float: right;
+      }
+    .button_wrap{
+      display: block;
+      margin:10px;
+      text-align: center;
+      align-items: center;
+    }
+
+    
+  }
+
+  
+
 }
 
 
@@ -638,7 +558,8 @@ nav,
   }
 
   .contain {
-    padding: 20px;
+    
+    padding: 20px ;
   }
 
   .lead {
