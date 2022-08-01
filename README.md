@@ -48,13 +48,12 @@ https://www.w3.org/WAI/WCAG21/quickref/?currentsidebar=%23col_customize&levels=a
 
 
 
-
-
 ## Built by using 
 AEM-Grid, SCSS and used Redux for statemanagement
 
 ## Lighthouse Performance report
 
-src\assets\lighthousereport.PNG
+![image](https://user-images.githubusercontent.com/105694122/182078597-d053c9bc-1320-41b2-9777-83b00077a80d.png)
+
 
 
